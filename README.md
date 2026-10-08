@@ -1,8 +1,8 @@
-# DayZ Cheats (dayzcheats.io)
+# R6 Cheats (r6cheats.org)
 
-Static Astro site for DayZ Standalone cheats — silent aim Aimbot, ESP, wallhack, loot ESP, radar hack — Cloudflare Workers ready.
+Static Astro site for Rainbow Six Siege cheats — silent aim Aimbot, ESP, wallhack, gadget ESP, radar hack — Cloudflare Workers ready.
 
-Worldwide English SEO targeting **dayz cheats**, **dayz hacks**, and **undetected dayz cheats**.
+Worldwide English SEO targeting **r6 cheats**, **r6 hacks**, and **undetected r6 cheats**.
 
 ```bash
 npm install

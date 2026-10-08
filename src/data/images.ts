@@ -1,11 +1,11 @@
-import { DAYZ_HERO, DAYZ_SOLDIER, DAYZ_COVER, DAYZ_MENU, DAYZ_ESP } from './media'
-import { DAYZ_OG, getOgImageForPath, PAGE_OG } from './og'
+import { R6_HERO, R6_SOLDIER, R6_COVER, R6_MENU, R6_ESP } from './media'
+import { R6_OG, getOgImageForPath, PAGE_OG } from './og'
 
-export { DAYZ_OG, getOgImageForPath, PAGE_OG }
+export { R6_OG, getOgImageForPath, PAGE_OG }
 export { forumOgImage } from './og'
 
-export const DAYZ_PRODUCT_HERO = DAYZ_HERO
-export const DAYZ_PRODUCT_COVER = DAYZ_COVER
+export const R6_PRODUCT_HERO = R6_HERO
+export const R6_PRODUCT_COVER = R6_COVER
 
 export type ImageSeoFields = {
   alt: string
@@ -21,13 +21,13 @@ export const IMAGE_SEO: Record<
     heroCaption: string
   }
 > = {
-  dayz: {
-    alt: 'DayZ cheats product artwork for DayZ Standalone on PC',
-    title: 'DayZ Cheats Product Details',
-    caption: 'DayZ Aimbot, ESP, wallhack, loot ESP, radar hack and BattlEye compatibility',
-    heroAlt: 'DayZ cheats silent aim Aimbot and ESP features',
-    heroTitle: 'DayZ Cheats Features',
-    heroCaption: 'Review DayZ Aimbot, ESP, radar hack and current BattlEye status',
+  r6: {
+    alt: 'R6 cheats product artwork for Rainbow Six Siege on PC',
+    title: 'R6 Cheats Product Details',
+    caption: 'R6 Aimbot, ESP, wallhack, gadget ESP, radar hack and BattlEye compatibility',
+    heroAlt: 'R6 cheats silent aim Aimbot and ESP features',
+    heroTitle: 'R6 Cheats Features',
+    heroCaption: 'Review R6 Aimbot, ESP, radar hack and current BattlEye status',
   },
 }
 
@@ -39,55 +39,55 @@ export const PAGE_IMAGES: Record<
   PageImage
 > = {
   home: {
-    src: DAYZ_SOLDIER,
+    src: R6_SOLDIER,
     og: PAGE_OG.home,
-    alt: 'DayZ cheats Aimbot and ESP artwork for DayZ Standalone on PC',
-    title: 'DayZ Cheats',
-    caption: 'DayZ Aimbot, ESP, wallhack and radar hack overview.',
+    alt: 'R6 cheats Aimbot and ESP artwork for Rainbow Six Siege on PC',
+    title: 'R6 Cheats',
+    caption: 'R6 Aimbot, ESP, wallhack and radar hack overview.',
   },
   forums: {
-    src: DAYZ_HERO,
+    src: R6_HERO,
     og: PAGE_OG.forums,
-    alt: 'DayZ cheats product artwork',
-    title: 'DayZ Cheats Guides',
-    caption: 'Setup, Aimbot and ESP guides for DayZ.',
+    alt: 'R6 cheats product artwork',
+    title: 'R6 Cheats Forums',
+    caption: 'Setup, Aimbot and ESP forum threads for R6.',
   },
   reviews: {
-    src: DAYZ_ESP,
+    src: R6_ESP,
     og: PAGE_OG.reviews,
-    alt: 'DayZ cheats review artwork',
-    title: 'DayZ Cheats Reviews',
-    caption: 'Feature and compatibility feedback for DayZ Standalone.',
+    alt: 'R6 cheats review artwork',
+    title: 'R6 Cheats Reviews',
+    caption: 'Feature and compatibility feedback for Rainbow Six Siege.',
   },
   faq: {
-    src: DAYZ_MENU,
+    src: R6_MENU,
     og: PAGE_OG.faq,
-    alt: 'DayZ cheats FAQ artwork',
-    title: 'DayZ Cheats FAQ',
-    caption: 'Compatibility, feature and setup answers for DayZ.',
+    alt: 'R6 cheats FAQ artwork',
+    title: 'R6 Cheats FAQ',
+    caption: 'Compatibility, feature and setup answers for R6.',
   },
   support: {
-    src: DAYZ_HERO,
+    src: R6_HERO,
     og: PAGE_OG.support,
-    alt: 'DayZ cheats support artwork',
-    title: 'DayZ Cheats Support',
-    caption: 'Delivery, loader and setup support for DayZ cheats.',
+    alt: 'R6 cheats support artwork',
+    title: 'R6 Cheats Support',
+    caption: 'Delivery, loader and setup support for R6 cheats.',
   },
   product: {
-    src: DAYZ_COVER,
+    src: R6_COVER,
     og: PAGE_OG.product,
-    alt: 'DayZ Aimbot ESP and radar hack product artwork',
-    title: 'DayZ Cheats Features',
-    caption: 'Product details for DayZ Aimbot and ESP.',
+    alt: 'R6 cheat gameplay frame from product preview video',
+    title: 'R6 Cheats Features',
+    caption: 'Product details for R6 Aimbot and ESP.',
   },
 }
 
 export function getGameImage(_slug: string): string {
-  return DAYZ_PRODUCT_COVER
+  return R6_PRODUCT_COVER
 }
 
 export function getProductHeroImage(_slug: string): string {
-  return DAYZ_PRODUCT_COVER
+  return R6_PRODUCT_COVER
 }
 
 export function getOgImage(path?: string): string {

@@ -116,7 +116,7 @@ body {
   background: #08060f;
 }
 
-/* Hide third-party watermarks on embedded DayZ preview videos */
+/* Hide third-party watermarks on embedded R6 preview videos */
 .video-brand-mask {
   position: relative;
   overflow: hidden;
@@ -183,29 +183,29 @@ body {
   outline: none;
   pointer-events: none;
   -webkit-appearance: none;
-  /* Keep footage readable; light violet grade only */
-  filter: saturate(0.85) contrast(1.06) brightness(0.88);
+  /* Footage is already brightened + purple-graded; keep it light for readability */
+  filter: saturate(1.05) contrast(1.04) brightness(1.08);
 }
 
 .hero-video-tint {
   background:
     linear-gradient(
       180deg,
-      rgba(176, 64, 251, 0.18) 0%,
-      rgba(124, 58, 237, 0.1) 45%,
-      rgba(8, 6, 15, 0.45) 100%
+      rgba(176, 64, 251, 0.22) 0%,
+      rgba(124, 58, 237, 0.12) 45%,
+      rgba(8, 6, 15, 0.4) 100%
     ),
-    radial-gradient(ellipse 90% 70% at 50% 20%, rgba(167, 139, 250, 0.16), transparent 65%);
+    radial-gradient(ellipse 90% 70% at 50% 20%, rgba(167, 139, 250, 0.2), transparent 65%);
   mix-blend-mode: soft-light;
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 .hero-video-tint-glow {
   background:
-    radial-gradient(ellipse 80% 50% at 20% 30%, rgba(176, 64, 251, 0.18), transparent 55%),
-    radial-gradient(ellipse 60% 45% at 85% 60%, rgba(124, 58, 237, 0.14), transparent 50%);
+    radial-gradient(ellipse 80% 50% at 20% 30%, rgba(176, 64, 251, 0.22), transparent 55%),
+    radial-gradient(ellipse 60% 45% at 85% 60%, rgba(124, 58, 237, 0.16), transparent 50%);
   mix-blend-mode: soft-light;
-  opacity: 0.55;
+  opacity: 0.6;
 }
 
 .hero-video-bg::-webkit-media-controls,
@@ -317,4 +317,31 @@ a:hover .game-cover-img:not(.game-cover-img--color) {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   box-shadow: none;
+}
+
+/*
+ * Inner page body copy — force muted white opacities to solid white for readability.
+ * Scoped to main + .page-body so nav, footer, and soft purple accents stay unchanged.
+ */
+main .text-white\/35,
+main .text-white\/40,
+main .text-white\/45,
+main .text-white\/50,
+main .text-white\/55,
+main .text-white\/60,
+main .text-white\/65,
+main .text-white\/70,
+main .text-white\/75,
+main .text-white\/80,
+.page-body .text-white\/35,
+.page-body .text-white\/40,
+.page-body .text-white\/45,
+.page-body .text-white\/50,
+.page-body .text-white\/55,
+.page-body .text-white\/60,
+.page-body .text-white\/65,
+.page-body .text-white\/70,
+.page-body .text-white\/75,
+.page-body .text-white\/80 {
+  color: #ffffff;
 }

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Single sitemap at /sitemap.xml — every indexed page URL + image entries.
  * One urlset only (never a sitemap index). 404 is excluded.
  */
@@ -10,21 +10,21 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const publicDir = join(root, 'public')
 const dataDir = join(root, 'src', 'data')
 const pagesDir = join(root, 'src', 'pages')
-const SITE = (process.env.SITE_URL || 'https://dayzcheats.io').replace(/\/$/, '')
+const SITE = (process.env.SITE_URL || 'https://r6cheats.org').replace(/\/$/, '')
 const TODAY = new Date().toLocaleDateString('en-CA')
 const HREFLANG = ['en', 'x-default']
 
-const HERO_FULL = '/media/dayz-hero-full.webp'
-const COVER = '/media/dayz-cover.webp'
-const BOX = '/media/dayz-box.jpg'
-const ESP = '/media/dayz-esp-gameplay.gif'
-const MENU = '/media/dayz-menu.gif'
-const CONTROL = '/media/dayz-control-art.jpg'
-const HOME_ART = '/media/dayz-home-art.jpg'
-const TACTICAL_ART = '/media/dayz-tactical-art.jpg'
-const VIDEO_THUMB = '/media/dayz-video-thumb.jpg'
-const PREVIEW_VIDEO = '/videos/dayz-preview.mp4'
-const OG_DEFAULT = '/og/dayz-cheats.jpg'
+const HERO_FULL = '/media/r6-hero-full.webp'
+const COVER = '/media/r6-cover.webp'
+const BOX = '/media/r6-box.jpg'
+const ESP = '/media/r6-esp-gameplay.webp'
+const MENU = '/media/r6-menu.webp'
+const CONTROL = '/media/r6-control-art.jpg'
+const HOME_ART = '/media/r6-home-art.jpg'
+const TACTICAL_ART = '/media/r6-tactical-art.jpg'
+const VIDEO_THUMB = '/media/r6-video-thumb.jpg'
+const PREVIEW_VIDEO = '/videos/r6-gameplay.mp4'
+const OG_DEFAULT = '/og/r6-cheats.jpg'
 
 const ALL_SITE_IMAGES = [
   HERO_FULL,
@@ -37,11 +37,12 @@ const ALL_SITE_IMAGES = [
   TACTICAL_ART,
   VIDEO_THUMB,
   '/og/home.jpg',
-  '/og/dayz-cheats.jpg',
+  '/og/r6-cheats.jpg',
   '/og/forums.jpg',
   '/og/reviews.jpg',
   '/og/faq.jpg',
   '/og/support.jpg',
+  '/og/pricing.jpg',
   '/og/privacy.jpg',
   '/og/terms.jpg',
   '/og/refunds.jpg',
@@ -65,11 +66,12 @@ const FORUM_IMAGES = {
 
 const PAGE_META = {
   '/': { priority: '1.0', changefreq: 'daily' },
-  '/dayz-cheats': { priority: '0.9', changefreq: 'weekly' },
+  '/r6-cheats': { priority: '0.9', changefreq: 'weekly' },
   '/forums': { priority: '0.85', changefreq: 'weekly' },
   '/reviews': { priority: '0.8', changefreq: 'weekly' },
   '/faq': { priority: '0.75', changefreq: 'monthly' },
   '/support': { priority: '0.75', changefreq: 'weekly' },
+  '/pricing': { priority: '0.9', changefreq: 'weekly' },
   '/privacy': { priority: '0.4', changefreq: 'yearly' },
   '/terms': { priority: '0.4', changefreq: 'yearly' },
   '/refunds': { priority: '0.45', changefreq: 'yearly' },
@@ -173,28 +175,28 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/home.jpg',
-        title: 'DayZ Cheats Open Graph',
-        caption: 'Google and social preview image for dayzcheats.io homepage.',
+        title: 'R6 Cheats Open Graph',
+        caption: 'Google and social preview image for r6cheats.org homepage.',
       },
       {
         src: HERO_FULL,
-        title: 'DayZ Cheats Hero',
-        caption: 'Buy DayZ cheats - DayZ Aimbot, ESP and radar hack hero artwork for PC.',
+        title: 'R6 Cheats Hero',
+        caption: 'Buy R6 cheats - R6 Aimbot, ESP and radar hack hero artwork for PC.',
       },
       {
         src: COVER,
-        title: 'DayZ Cheats Product Cover',
-        caption: 'DayZ cheats product cover for checkout and social previews.',
+        title: 'R6 Cheats Product Cover',
+        caption: 'R6 cheats product cover for checkout and social previews.',
       },
       {
         src: VIDEO_THUMB,
-        title: 'DayZ Cheats Preview Thumbnail',
-        caption: 'Thumbnail for the DayZ Aimbot and ESP preview video.',
+        title: 'R6 Cheats Preview Thumbnail',
+        caption: 'Thumbnail for the R6 Aimbot and ESP preview video.',
       },
       {
         src: OG_DEFAULT,
-        title: 'DayZ Cheats Product Social Preview',
-        caption: 'Default Open Graph image for dayzcheats.io product pages.',
+        title: 'R6 Cheats Product Social Preview',
+        caption: 'Default Open Graph image for r6cheats.org product pages.',
       },
     ]
   }
@@ -203,13 +205,13 @@ function imagesForPath(path, games, forums) {
   if (game) {
     return [
       {
-        src: '/og/dayz-cheats.jpg',
-        title: 'DayZ Cheats Open Graph',
-        caption: 'Google and social preview for the DayZ cheats product page.',
+        src: '/og/r6-cheats.jpg',
+        title: 'R6 Cheats Open Graph',
+        caption: 'Google and social preview for the R6 cheats product page.',
       },
       {
         src: COVER,
-        title: 'DayZ Aimbot ESP Product Artwork',
+        title: 'R6 Aimbot ESP Product Artwork',
         caption: 'Product features, compatibility, status and price before checkout.',
       },
       {
@@ -229,8 +231,8 @@ function imagesForPath(path, games, forums) {
       },
       {
         src: VIDEO_THUMB,
-        title: 'DayZ Cheats Preview Thumbnail',
-        caption: 'Thumbnail for the DayZ cheats preview video.',
+        title: 'R6 Cheats Preview Thumbnail',
+        caption: 'Thumbnail for the R6 cheats preview video.',
       },
     ]
   }
@@ -239,13 +241,13 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/forums.jpg',
-        title: 'DayZ Cheats Forums Open Graph',
-        caption: 'Google preview image for the DayZ Cheats guides index.',
+        title: 'R6 Cheats Forums Open Graph',
+        caption: 'Google preview image for the R6 Cheats forums index.',
       },
       {
         src: MENU,
-        title: 'DayZ Cheats Forum Artwork',
-        caption: 'Artwork reference for DayZ setup and feature guides.',
+        title: 'R6 Cheats Forum Artwork',
+        caption: 'Artwork reference for R6 setup and feature guides.',
       },
     ]
   }
@@ -259,14 +261,14 @@ function imagesForPath(path, games, forums) {
         title: `${forum?.title || slug} Open Graph`,
         caption:
           forum?.metaDescription ||
-          `Google preview image for ${forum?.title || slug} on dayzcheats.io.`,
+          `Google preview image for ${forum?.title || slug} on r6cheats.org.`,
       },
       {
         src: FORUM_IMAGES[slug] || MENU,
         title: `${forum?.title || slug} Artwork`,
         caption:
           forum?.excerpt ||
-          `Visible DayZ Cheats guide artwork for ${forum?.title || slug}.`,
+          `Visible R6 Cheats guide artwork for ${forum?.title || slug}.`,
       },
     ]
   }
@@ -275,8 +277,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/reviews.jpg',
-        title: 'DayZ Cheats Reviews Open Graph',
-        caption: 'Google preview image for DayZ cheats reviews.',
+        title: 'R6 Cheats Reviews Open Graph',
+        caption: 'Google preview image for R6 cheats reviews.',
       },
     ]
   }
@@ -284,8 +286,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/faq.jpg',
-        title: 'DayZ Cheats FAQ Open Graph',
-        caption: 'Google preview image for the DayZ Cheats FAQ.',
+        title: 'R6 Cheats FAQ Open Graph',
+        caption: 'Google preview image for the R6 Cheats FAQ.',
       },
     ]
   }
@@ -293,8 +295,17 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/support.jpg',
-        title: 'DayZ Cheats Support Open Graph',
-        caption: 'Google preview image for DayZ Cheats support.',
+        title: 'R6 Cheats Support Open Graph',
+        caption: 'Google preview image for R6 Cheats support.',
+      },
+    ]
+  }
+  if (path === '/pricing') {
+    return [
+      {
+        src: '/og/pricing.jpg',
+        title: 'R6 Cheats Pricing Open Graph',
+        caption: 'Google preview image for R6 Cheats pricing and checkout.',
       },
     ]
   }
@@ -302,8 +313,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/privacy.jpg',
-        title: 'DayZ Cheats Privacy Policy',
-        caption: 'Privacy policy preview for dayzcheats.io orders and support.',
+        title: 'R6 Cheats Privacy Policy',
+        caption: 'Privacy policy preview for r6cheats.org orders and support.',
       },
     ]
   }
@@ -311,8 +322,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/terms.jpg',
-        title: 'DayZ Cheats Terms of Use',
-        caption: 'License terms preview for DayZ Cheats.',
+        title: 'R6 Cheats Terms of Use',
+        caption: 'License terms preview for R6 Cheats.',
       },
     ]
   }
@@ -320,23 +331,23 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/refunds.jpg',
-        title: 'DayZ Cheats Refund Policy',
-        caption: 'Refund rules preview for digital DayZ Cheats licenses.',
+        title: 'R6 Cheats Refund Policy',
+        caption: 'Refund rules preview for digital R6 Cheats licenses.',
       },
     ]
   }
 
-  return [{ src: OG_DEFAULT, title: 'DayZ Cheats', caption: 'DayZ Cheats page artwork.' }]
+  return [{ src: OG_DEFAULT, title: 'R6 Cheats', caption: 'R6 Cheats page artwork.' }]
 }
 
 function videosForPath(path) {
-  if (path === '/dayz-cheats') {
+  if (path === '/r6-cheats') {
     return [
       {
         thumb: VIDEO_THUMB,
-        title: 'DayZ Cheats Aimbot and ESP Preview',
+        title: 'R6 Cheats Aimbot and ESP Preview',
         description:
-          'Self-hosted DayZ cheats preview showing Aimbot, ESP menu and survival gameplay visuals on PC.',
+          'Self-hosted R6 cheats preview showing Aimbot, ESP menu and survival gameplay visuals on PC.',
         content: PREVIEW_VIDEO,
       },
     ]
@@ -364,9 +375,10 @@ function buildSitemap(games, forums, allPaths) {
       if (path.endsWith('-cheats')) return 1
       if (path === '/forums') return 2
       if (path.startsWith('/forums/')) return 3
-      if (path === '/reviews') return 4
-      if (path === '/faq') return 5
-      if (path === '/support') return 6
+      if (path === '/pricing') return 4
+      if (path === '/reviews') return 5
+      if (path === '/faq') return 6
+      if (path === '/support') return 7
       return 10
     }
     const diff = rank(a) - rank(b)
@@ -445,16 +457,16 @@ function validate(games, forums, allPaths, sitemap) {
     if (!imageLocs.includes(siteUrl(image))) errors.push(`Sitemap missing required image: ${image}`)
   }
   if (!sitemap.includes(siteUrl(PREVIEW_VIDEO))) {
-    errors.push('Sitemap missing DayZ preview video content_loc')
+    errors.push('Sitemap missing R6 preview video content_loc')
   }
   if (/Tarkov|tarkovcheats|EFT Reaper|Warzone|warzonecheats|Ricochet/i.test(sitemap)) {
     errors.push('Sitemap still contains legacy Tarkov/Warzone labels')
   }
-  if (!sitemap.includes('dayzcheats.io')) {
-    errors.push('Sitemap must target dayzcheats.io')
+  if (!sitemap.includes('r6cheats.org')) {
+    errors.push('Sitemap must target r6cheats.org')
   }
   if (/tarkovcheats|warzonecheats|wardogshacks|theisle/i.test(sitemap)) {
-    errors.push('Sitemap contains a non-DayZ domain')
+    errors.push('Sitemap contains a non-R6 domain')
   }
   if (imageLocs.length < expectedUrls.size) {
     errors.push('Image count is lower than page count - every URL needs an image')

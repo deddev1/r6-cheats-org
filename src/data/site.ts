@@ -1,41 +1,52 @@
-﻿import { DAYZ_OG } from './images'
+import { R6_OG } from './images'
 import { PAGE_OG } from './og'
 
-export const SITE_URL = 'https://dayzcheats.io'
-export const SITE_NAME = 'DayZ Cheats'
-export const SITE_HOST = 'dayzcheats.io'
+export const SITE_URL = 'https://r6cheats.org'
+export const SITE_NAME = 'R6 Cheats'
+export const SITE_HOST = 'r6cheats.org'
 
 /**
  * Sole purpose — used in schema + about copy.
- * Single-product site: DayZ / DayZ Standalone cheats for PC (worldwide).
- * Canonical host is apex https://dayzcheats.io (www 301s to apex in the Worker).
+ * Single-product site: Rainbow Six Siege cheats for PC (worldwide).
+ * Canonical host is apex https://r6cheats.org (www 301s to apex in the Worker).
  */
 export const SITE_PURPOSE =
-  'Buy DayZ cheats for DayZ Standalone on Windows PC — silent-aim Aimbot, player and loot ESP, wallhack, radar hack and live BattlEye status with instant digital delivery.'
+  'Buy R6 cheats for Rainbow Six Siege on Windows PC — silent-aim Aimbot, player and gadget ESP, wallhack, radar hack and live BattlEye status with instant digital delivery.'
 
 export const SITE_ABOUT = [
-  'dayz cheats',
-  'dayz cheat',
-  'dayz hacks',
-  'dayz hack',
-  'dayz standalone cheats',
-  'dayz aimbot',
-  'dayz esp',
-  'dayz wallhack',
-  'dayz radar hack',
-  'battleye dayz cheats',
-  'dayz cheat aimbot',
+  'r6 cheats',
+  'r6 cheat',
+  'r6 hacks',
+  'r6 hack',
+  'rainbow six siege cheats',
+  'r6 aimbot',
+  'r6 esp',
+  'r6 wallhack',
+  'r6 radar hack',
+  'battleye r6 cheats',
+  'r6 cheat aimbot',
+  'buy r6 cheats',
+  'buy r6 cheat',
+  'buy r6 hacks',
+  'buy r6 hack',
+  'buy rainbow six siege cheats',
+  'buy r6 aimbot',
+  'buy r6 esp',
+  'buy r6 wallhack',
+  'buy r6 radar hack',
 ] as const
 
-/** Offer price shown on product schema + purchase UI. */
+/** Monthly license price shown on product schema + purchase UI. */
 export const PRODUCT_PRICE_USD = '35'
+/** Lifetime license price shown on pricing. */
+export const PRODUCT_LIFETIME_PRICE_USD = '150'
 
 export const SEO_REGIONS = [
   { hreflang: 'en', label: 'English' },
   { hreflang: 'x-default', label: 'Default' },
 ] as const
 
-export const OG_IMAGE = DAYZ_OG
+export const OG_IMAGE = R6_OG
 
 export type PageSeo = {
   title: string
@@ -53,74 +64,83 @@ const INDEX_ROBOTS =
 
 export const SEO = {
   home: {
-    title: 'DayZ Cheats | DayZ Cheat Aimbot, ESP & Hacks',
+    title: 'R6 Cheats | Aimbot, ESP & BattlEye Status',
     description:
-      'Buy DayZ cheats for DayZ Standalone — silent aim Aimbot, player and loot ESP, wallhack and radar hack from $35. Check live BattlEye status, then checkout.',
+      'R6 Cheats for Rainbow Six Siege — silent aim Aimbot, player and gadget ESP, wallhack and radar hack with live BattlEye status on Windows PC.',
     path: '/',
     ogType: 'website',
     image: PAGE_OG.home,
-    imageAlt: 'DayZ Cheats — DayZ Aimbot, ESP and radar hack for PC',
+    imageAlt: 'R6 Cheats — Aimbot, ESP and BattlEye status for PC',
     robots: INDEX_ROBOTS,
   },
   forums: {
-    title: 'DayZ Cheats Guides | Aimbot, ESP, Radar & Status',
+    title: 'R6 Cheats Forums | Aimbot, ESP, Radar & Status',
     description:
-      'DayZ cheats guides hub — silent aim, player and loot ESP, radar hack, antivirus exclusions, loader setup and BattlEye status articles before you buy.',
+      'R6 cheats forums — silent aim, player and gadget ESP, radar hack, antivirus exclusions, loader setup and BattlEye status threads before you buy.',
     path: '/forums',
     ogType: 'website',
     image: PAGE_OG.forums,
-    imageAlt: 'DayZ Cheats setup guides for Aimbot, ESP and BattlEye',
+    imageAlt: 'R6 Cheats setup forums for Aimbot, ESP and BattlEye',
     robots: INDEX_ROBOTS,
   },
   reviews: {
-    title: 'DayZ Cheats Reviews | Buyer Feedback on DayZ Hacks',
+    title: 'R6 Cheats Reviews | Buyer Feedback on R6 Hacks',
     description:
-      'Read DayZ cheats reviews covering silent aim, player ESP, loot ESP and BattlEye rebuilds before you buy a DayZ Standalone license for PC.',
+      'Read R6 cheats reviews covering silent aim, player ESP, gadget ESP and BattlEye rebuilds before you buy a Rainbow Six Siege license for PC.',
     path: '/reviews',
     ogType: 'website',
     image: PAGE_OG.reviews,
-    imageAlt: 'DayZ Cheats buyer reviews for DayZ Standalone',
+    imageAlt: 'R6 Cheats buyer reviews for Rainbow Six Siege',
     robots: INDEX_ROBOTS,
   },
   faq: {
-    title: 'DayZ Cheats FAQ | Price, BattlEye Status & Setup',
+    title: 'R6 Cheats FAQ | Price, BattlEye Status & Setup',
     description:
-      'FAQ for buying DayZ cheats on Windows PC — price, Aimbot and ESP features, BattlEye status, private server support, loader setup and delivery.',
+      'FAQ for buying R6 cheats on Windows PC — price, Aimbot and ESP features, BattlEye status, private server support, loader setup and delivery.',
     path: '/faq',
     ogType: 'website',
     image: PAGE_OG.faq,
-    imageAlt: 'DayZ Cheats FAQ — price, BattlEye and setup',
+    imageAlt: 'R6 Cheats FAQ — price, BattlEye and setup',
     robots: INDEX_ROBOTS,
   },
   support: {
-    title: 'DayZ Cheats Support | Loader, Delivery & Setup Help',
+    title: 'R6 Cheats Support | Loader, Delivery & Setup Help',
     description:
-      'Get help buying and loading DayZ cheats — delivery email, Windows setup, antivirus exclusions, loader errors and BattlEye status updates.',
+      'Get help buying and loading R6 cheats — delivery email, Windows setup, antivirus exclusions, loader errors and BattlEye status updates.',
     path: '/support',
     ogType: 'website',
     image: PAGE_OG.support,
-    imageAlt: 'DayZ Cheats support for loader and delivery help',
+    imageAlt: 'R6 Cheats support for loader and delivery help',
     robots: INDEX_ROBOTS,
   },
   product: {
-    title: 'DayZ Cheats Price & Checkout | Aimbot, ESP, Radar',
+    title: 'R6 Cheats — Aimbot, ESP & Wallhack | From $35',
     description:
-      'DayZ cheats price and checkout — silent aim Aimbot, player ESP, loot ESP, wallhack, radar hack, spoofer and live BattlEye status from $35.',
-    path: '/dayz-cheats',
+      'Buy R6 Cheats for Rainbow Six Siege — silent aim Aimbot, player ESP, gadget ESP, wallhack, radar hack and spoofer with live BattlEye status. Licenses from $35.',
+    path: '/r6-cheats',
     ogType: 'product',
     image: PAGE_OG.product,
-    imageAlt: 'DayZ Aimbot, ESP and radar hack product details',
+    imageAlt: 'R6 Aimbot, ESP and radar hack product details',
+    robots: INDEX_ROBOTS,
+  },
+  pricing: {
+    title: 'Buy R6 Cheats | $35 Monthly & $150 Lifetime',
+    description:
+      'Buy R6 Cheats — $35 monthly or $150 lifetime with Aimbot, ESP, wallhack and radar. Check BattlEye status, then checkout for instant digital delivery.',
+    path: '/pricing',
+    ogType: 'website',
+    image: PAGE_OG.pricing,
+    imageAlt: 'Buy R6 Cheats — $35 monthly and $150 lifetime pricing',
     robots: INDEX_ROBOTS,
   },
 } as const satisfies Record<string, PageSeo>
 
 export const HOME_HEADINGS = {
-  h1: 'DayZ Cheats — DayZ Cheat Aimbot, ESP & Hacks',
-  h2Features: 'DayZ Aimbot, ESP, loot ESP & radar hack',
-  h2Featured: 'DayZ ESP and silent aim Aimbot',
-  h2About: 'Clear BattlEye status before you buy DayZ cheats',
-  h2Access: 'Buy DayZ Cheats',
-  h2Faq: 'DayZ Cheats FAQ',
+  h1: 'R6 Cheats — Aimbot, ESP & Hacks',
+  h2Features: 'R6 Aimbot, ESP, gadget ESP & radar hack',
+  h2About: 'Clear BattlEye status before you buy R6 cheats',
+  h2Access: 'Buy R6 Cheats',
+  h2Faq: 'R6 Cheats FAQ',
 } as const
 
 export function absoluteUrl(path: string) {

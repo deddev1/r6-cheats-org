@@ -1,27 +1,43 @@
-import { DAYZ_HERO } from '../data/media'
+import { R6_HERO_VIDEO } from '../data/media'
 
 type VideoBgProps = {
-  /** Full-bleed DayZ hero image (defaults to product artwork). */
-  image?: string
+  /** Full-bleed hero video (purple-tinted clip). */
+  video?: string
+  /** Poster / fallback still shown before video paints. */
+  poster?: string
   imageAlt?: string
 }
 
-/** Full-bleed static DayZ hero — no legacy video background. */
+/** Full-bleed looping R6 hero video with purple grade + soft overlays. */
 export function VideoBg({
-  image = DAYZ_HERO,
-  imageAlt = 'DayZ cheats Aimbot and ESP product artwork',
+  video = R6_HERO_VIDEO.src,
+  poster = R6_HERO_VIDEO.poster,
+  imageAlt = 'R6 cheats Aimbot and ESP gameplay',
 }: VideoBgProps) {
   return (
     <div className="hero-video-wrap absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
       <div className="absolute inset-0 z-0 bg-z-bg" aria-hidden />
+      <video
+        className="hero-video-bg absolute inset-0 z-[1] h-full w-full object-cover object-center"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster={poster}
+        aria-label={imageAlt}
+      >
+        <source src={video} type="video/mp4" />
+      </video>
       <img
-        src={image}
-        alt={imageAlt}
-        width={1920}
-        height={1080}
+        src={poster}
+        alt=""
+        width={1280}
+        height={720}
         decoding="async"
         fetchPriority="high"
-        className="hero-video-bg absolute inset-0 z-[1] h-full w-full object-cover object-[78%_42%] opacity-100 sm:object-[72%_40%]"
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-0 h-full w-full object-cover opacity-0"
       />
       <div className="hero-video-tint pointer-events-none absolute inset-0 z-[2]" aria-hidden />
       <div className="hero-video-tint-glow pointer-events-none absolute inset-0 z-[2]" aria-hidden />

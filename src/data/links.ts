@@ -1,31 +1,36 @@
 import { blogPath } from './blog-paths'
 
-/** Official DayZ destinations for factual game context. */
-export const OFFICIAL_DAYZ_LINKS = [
+/** Official Rainbow Six Siege destinations for factual game context. */
+export const OFFICIAL_R6_LINKS = [
   {
-    label: 'DayZ',
-    href: 'https://dayz.com/',
-    description: 'Official DayZ game site',
+    label: 'Rainbow Six Siege',
+    href: 'https://www.ubisoft.com/en-us/game/rainbow-six/siege',
+    description: 'Official Rainbow Six Siege site',
   },
   {
-    label: 'DayZ on Steam',
-    href: 'https://store.steampowered.com/app/221100/DayZ/',
-    description: 'Official PC store page and client download',
+    label: 'Rainbow Six Siege on Steam',
+    href: 'https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/',
+    description: 'Official Steam page for Rainbow Six Siege',
   },
   {
-    label: 'Bohemia Interactive Support',
-    href: 'https://www.bohemia.net/',
-    description: 'Publisher support and account help',
+    label: 'Ubisoft Support',
+    href: 'https://www.ubisoft.com/en-us/help',
+    description: 'Ubisoft account and game support',
   },
 ] as const
 
 /** Primary internal routes for crawl equity. */
 export const SITE_PAGE_LINKS = [
-  { label: 'Home', to: '/', description: 'Live status, price and checkout' },
+  { label: 'Home', to: '/', description: 'Buy R6 cheats — live status, price and checkout' },
   {
     label: 'Product page',
-    to: '/dayz-cheats',
-    description: 'Aimbot, ESP, loot ESP, radar hack and compatibility details',
+    to: '/r6-cheats',
+    description: 'Aimbot, ESP, gadget ESP, radar hack and compatibility details',
+  },
+  {
+    label: 'Pricing & checkout',
+    to: '/pricing',
+    description: 'Buy R6 cheats — license plans from $35',
   },
   {
     label: 'Forums index',
@@ -75,14 +80,14 @@ export const SITE_GUIDE_LINKS = [
   { label: 'Antivirus exclusions', to: blogPath('disable-antivirus') },
   { label: 'Stream-proof setup', to: blogPath('stream-proof-setup') },
   { label: 'BattlEye status', to: blogPath('battleye-status') },
-  { label: 'Survival & loot', to: blogPath('raid-play-guide') },
+  { label: 'Attack & defend', to: blogPath('raid-play-guide') },
   { label: 'Loader errors', to: blogPath('loader-errors') },
   { label: 'Status checklist', to: blogPath('undetected-status') },
 ] as const
 
 const CHECKOUT_HOST = ['za', 'deyo', '.com'].join('')
 const CHECKOUT_REF = ['Q', 'R', 'H'].join('')
-const CHECKOUT_PRODUCT = '/products/dayz-cheats'
+const CHECKOUT_PRODUCT = '/products/r6-cheats'
 
 export const CHECKOUT_URL = `https://${CHECKOUT_HOST}/go/${CHECKOUT_REF}?to=${encodeURIComponent(CHECKOUT_PRODUCT)}`
 

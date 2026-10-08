@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Auto-generate 1200x630 JPEG Open Graph images for every indexed URL.
  * Google SERP / social crawlers fetch these for right-side thumbnails.
  * Never overwrites battlelog-sourced /media assets.
@@ -34,17 +34,17 @@ async function exists(path) {
 }
 
 const requiredBattlelog = [
-  join(mediaDir, 'dayz-hero-full.webp'),
-  join(mediaDir, 'dayz-cover.webp'),
-  join(mediaDir, 'dayz-box.jpg'),
-  join(mediaDir, 'dayz-menu.gif'),
-  join(mediaDir, 'dayz-esp-gameplay.gif'),
-  join(mediaDir, 'dayz-video-thumb.jpg'),
+  join(mediaDir, 'r6-hero-full.webp'),
+  join(mediaDir, 'r6-cover.webp'),
+  join(mediaDir, 'r6-box.jpg'),
+  join(mediaDir, 'r6-menu.webp'),
+  join(mediaDir, 'r6-esp-gameplay.webp'),
+  join(mediaDir, 'r6-video-thumb.jpg'),
 ]
 
 for (const path of requiredBattlelog) {
   if (!(await exists(path))) {
-    throw new Error(`Missing DayZ media asset (do not regenerate): ${path}`)
+    throw new Error(`Missing R6 media asset (do not regenerate): ${path}`)
   }
 }
 
@@ -72,7 +72,7 @@ function overlaySvg(width, height, eyebrow, title, subtitle) {
         )
         .join('\n')}
       <text x="64" y="480" fill="#c9bdd2" font-size="26" font-family="Arial, sans-serif">${escapeXml(subtitle)}</text>
-      <text x="64" y="560" fill="#9299a3" font-size="20" font-family="Arial, sans-serif">dayzcheats.io</text>
+      <text x="64" y="560" fill="#9299a3" font-size="20" font-family="Arial, sans-serif">r6cheats.org</text>
     </svg>
   `)
 }
@@ -105,68 +105,75 @@ function loadForumMeta(src) {
   }))
 }
 
-const heroFull = join(mediaDir, 'dayz-hero-full.webp')
-const coverArt = join(mediaDir, 'dayz-cover.webp')
-const espGif = join(mediaDir, 'dayz-esp-gameplay.gif')
-const menuGif = join(mediaDir, 'dayz-menu.gif')
-const videoThumb = join(mediaDir, 'dayz-video-thumb.jpg')
+const heroFull = join(mediaDir, 'r6-hero-full.webp')
+const coverArt = join(mediaDir, 'r6-cover.webp')
+const espStill = join(mediaDir, 'r6-esp-gameplay.webp')
+const menuStill = join(mediaDir, 'r6-menu.webp')
+const videoThumb = join(mediaDir, 'r6-video-thumb.jpg')
 
 const staticOg = [
   {
     file: 'home.jpg',
     source: heroFull,
-    eyebrow: 'DAYZ CHEATS',
-    title: 'DayZ Aimbot, ESP & Radar Hack',
-    subtitle: 'DayZ cheats from $35 · live BattlEye status',
+    eyebrow: 'R6 CHEATS',
+    title: 'R6 Aimbot, ESP & Radar Hack',
+    subtitle: 'R6 cheats from $35 · live BattlEye status',
   },
   {
-    file: 'dayz-cheats.jpg',
+    file: 'r6-cheats.jpg',
     source: coverArt,
     eyebrow: 'PRODUCT DETAILS',
-    title: 'DayZ Aimbot, ESP & Radar',
+    title: 'R6 Aimbot, ESP & Radar',
     subtitle: 'Features, BattlEye status and price',
   },
   {
     file: 'forums.jpg',
-    source: menuGif,
-    eyebrow: 'GUIDES',
-    title: 'DayZ Cheats Setup Forums',
+    source: menuStill,
+    eyebrow: 'FORUMS',
+    title: 'R6 Cheats Setup Forums',
     subtitle: 'Aimbot, ESP, loader and BattlEye guides',
   },
   {
     file: 'reviews.jpg',
-    source: espGif,
+    source: espStill,
     eyebrow: 'REVIEWS',
-    title: 'DayZ Cheats Buyer Reviews',
-    subtitle: 'Real DayZ Aimbot and ESP feedback',
+    title: 'R6 Cheats Buyer Reviews',
+    subtitle: 'Real R6 Aimbot and ESP feedback',
   },
   {
     file: 'faq.jpg',
-    source: menuGif,
+    source: menuStill,
     eyebrow: 'FAQ',
-    title: 'DayZ Cheats FAQ',
+    title: 'R6 Cheats FAQ',
     subtitle: 'Price, BattlEye status and setup answers',
   },
   {
     file: 'support.jpg',
     source: videoThumb,
     eyebrow: 'SUPPORT',
-    title: 'DayZ Cheats Support',
+    title: 'R6 Cheats Support',
     subtitle: 'Loader, delivery and Windows help',
+  },
+  {
+    file: 'pricing.jpg',
+    source: coverArt,
+    eyebrow: 'PRICING',
+    title: 'R6 Cheats Pricing',
+    subtitle: 'Licenses from $35 · checkout & delivery',
   },
   {
     file: 'privacy.jpg',
     source: heroFull,
     eyebrow: 'POLICY',
     title: 'Privacy Policy',
-    subtitle: 'How dayzcheats.io handles order data',
+    subtitle: 'How r6cheats.org handles order data',
   },
   {
     file: 'terms.jpg',
     source: heroFull,
     eyebrow: 'POLICY',
     title: 'Terms of Use',
-    subtitle: 'License rules for DayZ Cheats',
+    subtitle: 'License rules for R6 Cheats',
   },
   {
     file: 'refunds.jpg',
@@ -192,8 +199,8 @@ if (!forums.length) {
   for (const slug of loadForumSlugs(blogsSrc)) {
     forums.push({
       slug,
-      title: `DayZ Cheats ${slug}`,
-      description: 'DayZ cheats guide on dayzcheats.io',
+      title: `R6 Cheats ${slug}`,
+      description: 'R6 cheats guide on r6cheats.org',
     })
   }
 }
@@ -203,16 +210,16 @@ for (const forum of forums) {
   const out = join(ogDir, file)
   const source =
     /esp|wallhack|radar|raid/i.test(forum.slug)
-      ? espGif
+      ? espStill
       : /aimbot|features|hotkeys|setup|windows|antivirus|loader|stream/i.test(forum.slug)
-        ? menuGif
+        ? menuStill
         : coverArt
   await writeOgJpeg(
     out,
     source,
-    'DAYZ GUIDE',
+    'R6 GUIDE',
     forum.title.replace(/\s*\|\s*.*$/, '').slice(0, 48),
-    'DayZ cheats · dayzcheats.io',
+    'R6 cheats · r6cheats.org',
   )
   created.push(file)
 }
@@ -236,9 +243,9 @@ function fillerSvg(width, height, eyebrow, title, subtitle) {
 }
 
 for (const [name, eyebrow, title, subtitle] of [
-  ['dayz-tactical-art.jpg', 'DAYZ STANDALONE', 'DayZ Cheats', 'Aimbot · ESP · Loot ESP · BattlEye'],
-  ['dayz-control-art.jpg', 'DAYZ · WINDOWS PC', 'DayZ ESP & Radar', 'Built for DayZ survival runs'],
-  ['dayz-home-art.jpg', 'dayzcheats.io', 'DayZ Cheats', 'Aimbot, ESP, wallhack and radar hack'],
+  ['r6-tactical-art.jpg', 'R6 STANDALONE', 'R6 Cheats', 'Aimbot · ESP · Gadget ESP · BattlEye'],
+  ['r6-control-art.jpg', 'R6 · WINDOWS PC', 'R6 ESP & Radar', 'Built for R6 survival runs'],
+  ['r6-home-art.jpg', 'r6cheats.org', 'R6 Cheats', 'Aimbot, ESP, wallhack and radar hack'],
 ]) {
   const path = join(mediaDir, name)
   if (

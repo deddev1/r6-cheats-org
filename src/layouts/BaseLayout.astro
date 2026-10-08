@@ -28,19 +28,19 @@ const imageType = isOgJpeg
     : image.endsWith('.gif')
       ? 'image/gif'
       : 'image/jpeg'
-const imageWidth = isOgJpeg ? 1200 : image.includes('/media/dayz-') ? 800 : 1200
-const imageHeight = isOgJpeg ? 630 : image.includes('/media/dayz-') ? 450 : 630
+const imageWidth = isOgJpeg ? 1200 : image.includes('/media/r6-') ? 800 : 1200
+const imageHeight = isOgJpeg ? 630 : image.includes('/media/r6-') ? 450 : 630
 const robots =
   seo.robots ||
   'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
 const jsonLd = buildPageJsonLd(seo, jsonLdExtra)
 const isHome = seo.path === '/' || seo.path === ''
-/** Preload OG only when it supports LCP (hero/product/forums) — not text pages */
+/** Preload OG when it supports LCP (product/forums) — home uses hero poster instead */
 const preloadOg =
-  isHome ||
-  seo.path === '/dayz-cheats' ||
-  seo.path === '/forums' ||
-  seo.path.startsWith('/forums/')
+  !isHome &&
+  (seo.path === '/r6-cheats' ||
+    seo.path === '/forums' ||
+    seo.path.startsWith('/forums/'))
 ---
 
 <!doctype html>
@@ -61,8 +61,8 @@ const preloadOg =
       <link
         rel="preload"
         as="image"
-        href="/media/dayz-hero-full.webp"
-        type="image/webp"
+        href="/media/r6-hero-poster.jpg"
+        type="image/jpeg"
         fetchpriority="high"
       />
     ) : null}

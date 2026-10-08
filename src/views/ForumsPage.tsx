@@ -7,6 +7,7 @@ import { HeroSearch } from '../components/HeroSearch'
 import { BLOGS, blogPath } from '../data/blogs'
 import { guidePath } from '../data/games'
 import { SITE_HOST } from '../data/site'
+import { RelatedLinks } from '../components/RelatedLinks'
 
 type ForumsPageProps = {
   initialQuery?: string
@@ -31,10 +32,7 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
   return (
     <div className="min-h-screen overflow-x-hidden bg-z-bg text-white">
       <section className="relative flex min-h-[60vh] flex-col overflow-x-clip sm:min-h-[65vh]">
-        <VideoBg
-          image="/media/dayz-hero-full.webp"
-          imageAlt="DayZ cheats Aimbot and ESP product artwork"
-        />
+        <VideoBg imageAlt="R6 cheats Aimbot and ESP gameplay" />
         <div className="relative z-20 flex min-h-[60vh] flex-col sm:min-h-[65vh]">
           <Navbar onVideo />
           <div className="page-x mt-auto pb-10 sm:pb-14">
@@ -43,16 +41,17 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
                 Forums · Setup · {SITE_HOST}
               </p>
               <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-                DayZ Cheats Guides
+                R6 Cheats Forums
               </h1>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/70">
-                Setup threads for DayZ Cheats — features, hotkeys, complete setup,
+                Setup threads for R6 Cheats — features, hotkeys, complete setup,
                 disable antivirus, how to load, and live BattlEye status before you checkout.
               </p>
               <div className="relative z-50 mt-7">
                 <HeroSearch
                   value={q}
                   onChange={onSearchChange}
+                  source="forums"
                   submitTo="filter"
                   placeholder="Search forums — setup, antivirus, hotkeys…"
                 />
@@ -70,17 +69,17 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
             <div className="page-card mb-10 flex flex-col gap-4 rounded-2xl p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
               <div>
                 <p className="text-xs uppercase tracking-wider text-white/45">Product</p>
-                <h2 className="mt-1 text-xl font-semibold text-white">DayZ Cheats</h2>
+                <h2 className="mt-1 text-xl font-semibold text-white">R6 Cheats</h2>
                 <p className="mt-2 max-w-xl text-sm text-white/55">
-                  Buy ESP, wallhack & silent aim Aimbot for DayZ Standalone — live BattlEye status
+                  Buy ESP, wallhack & silent aim Aimbot for Rainbow Six Siege — live BattlEye status
                   before checkout.
                 </p>
               </div>
               <a
-                href={guidePath('dayz')}
+                href={guidePath('r6')}
                 className="cta-gradient inline-flex shrink-0 items-center justify-center rounded-full px-6 py-3 text-sm font-medium text-white"
               >
-                Buy DayZ Cheats
+                Buy R6 Cheats
               </a>
             </div>
 
@@ -137,6 +136,12 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
                 ))}
               </div>
             )}
+          </div>
+        </section>
+
+        <section className="page-x border-t border-z-soft/15 py-12 sm:py-14">
+          <div className="mx-auto max-w-6xl">
+            <RelatedLinks page="forums" />
           </div>
         </section>
 

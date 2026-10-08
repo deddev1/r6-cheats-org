@@ -3,6 +3,7 @@ import { Navbar } from '../components/Navbar'
 import { SiteFooter } from '../components/SiteFooter'
 import { SITE_FAQS } from '../data/faqs'
 import { CheckoutLink } from '../components/CheckoutLink'
+import { RelatedLinks } from '../components/RelatedLinks'
 import { SITE_NAME } from '../data/site'
 
 export function FaqPage() {
@@ -19,7 +20,7 @@ export function FaqPage() {
               {SITE_NAME}
             </p>
             <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-              DayZ Cheats FAQ
+              R6 Cheats FAQ
             </h1>
             <p className="mt-4 text-base leading-relaxed text-white/60">
               BattlEye status, ESP, Aimbot, radar hack, servers, buying, loading, support and
@@ -57,6 +58,12 @@ export function FaqPage() {
           </div>
         </section>
 
+        <section className="page-x border-t border-z-soft/15 py-12 sm:py-14">
+          <div className="mx-auto max-w-3xl">
+            <RelatedLinks page="faq" />
+          </div>
+        </section>
+
         <section className="page-x border-t border-white/10 py-14 sm:py-16">
           <div className="mx-auto flex max-w-3xl flex-col gap-5 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
             <div className="min-w-0 flex-1">
@@ -75,7 +82,7 @@ export function FaqPage() {
                 Support
               </a>
               <CheckoutLink className="cta-gradient inline-flex h-11 items-center justify-center rounded-full px-6 text-sm font-semibold text-white">
-                Buy DayZ Cheats
+                Buy R6 Cheats
               </CheckoutLink>
             </div>
           </div>

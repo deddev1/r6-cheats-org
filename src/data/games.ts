@@ -7,9 +7,9 @@ export type Game = {
   popular?: boolean
 }
 
-/** Site is DayZ cheats only — no other titles in the catalog. */
+/** Site is R6 cheats only — no other titles in the catalog. */
 export const GAMES: Game[] = [
-  { slug: 'dayz', name: 'DayZ', status: 'Undetected', popular: true },
+  { slug: 'r6', name: 'Rainbow Six Siege', status: 'Undetected', popular: true },
 ]
 
 export function getGame(slug: string) {
@@ -27,32 +27,32 @@ export function parseGuideSlug(param: string) {
 
 export const GUIDE_FEATURES = [
   {
-    name: 'DayZ Aimbot (silent aim)',
-    text: 'Silent-aim tracking with FOV, smoothing and bone selection — fire near a survivor and still land the hit, so it reads as legit even when an admin spectates.',
+    name: 'R6 Aimbot (silent aim)',
+    text: 'Silent-aim tracking with FOV, smoothing and bone selection — fire near an operator and still land the hit, so it reads as legit even when someone spectates.',
   },
   {
     name: 'Player ESP / Wallhack',
-    text: 'See survivors through walls and treelines with distance, health and gear information when the build supports it — tell friendlies from hostiles instantly.',
+    text: 'See operators through walls with distance, health and loadout information when the build supports it — tell attackers from defenders instantly.',
   },
   {
-    name: 'Infected ESP',
-    text: 'Track infected before they track you, so a loot run in Cherno or Elektro never turns into a zombie train at the worst moment.',
+    name: 'Gadget ESP',
+    text: 'Track cameras, claymores, nitro cells and utility before you swing — clear site without guessing what is waiting around the corner.',
   },
   {
-    name: 'Loot & Item ESP',
-    text: 'Highlight guns, ammo, medical supplies and rare gear by category so you skip empty houses and gear up in minutes instead of hours.',
+    name: 'Operator ESP',
+    text: 'Highlight enemy operators by role and distance so you plan executes, flanks and retakes with full map awareness.',
   },
   {
     name: 'Radar Hack',
-    text: '2D radar awareness for off-screen survivors across Chernarus and Livonia — spot the third party before it reaches your position.',
+    text: '2D radar awareness for off-screen operators across Siege maps — spot the third party before it reaches your angle.',
   },
   {
-    name: 'Base & Stash Intel',
-    text: 'Spot player bases, tents and buried stashes on private servers so raids land on full storage instead of empty walls.',
+    name: 'Default & Camera Intel',
+    text: 'Spot common default plant spots and camera placements so your team takes site with better information.',
   },
   {
-    name: 'Official & modded server support',
-    text: 'Works on official DayZ servers and on private servers running most common mod setups.',
+    name: 'Ranked & casual support',
+    text: 'Works on Rainbow Six Siege ranked and casual queues on Windows PC.',
   },
   {
     name: 'Spoofer + Cleaner',
@@ -60,7 +60,7 @@ export const GUIDE_FEATURES = [
   },
   {
     name: 'BattlEye status + support',
-    text: 'Live clear-to-load or Updating status is reviewed after BattlEye and DayZ patches before you load.',
+    text: 'Live clear-to-load or Updating status is reviewed after BattlEye and R6 patches before you load.',
   },
 ] as const
 

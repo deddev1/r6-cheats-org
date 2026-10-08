@@ -1,9 +1,9 @@
-﻿import { existsSync, readFileSync, readdirSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join, relative } from 'node:path'
 
 const root = join(import.meta.dirname, '..')
 const dist = join(root, 'dist')
-const site = 'https://dayzcheats.io'
+const site = 'https://r6cheats.org'
 const failures = []
 
 function fail(message) {
@@ -73,18 +73,18 @@ for (const file of files) {
 }
 
 const home = readFileSync(join(dist, 'index.html'), 'utf8')
-const product = readFileSync(join(dist, 'dayz-cheats', 'index.html'), 'utf8')
+const product = readFileSync(join(dist, 'r6-cheats', 'index.html'), 'utf8')
 const reviews = readFileSync(join(dist, 'reviews', 'index.html'), 'utf8')
 const faq = readFileSync(join(dist, 'faq', 'index.html'), 'utf8')
 const support = readFileSync(join(dist, 'support', 'index.html'), 'utf8')
 const forums = readFileSync(join(dist, 'forums', 'index.html'), 'utf8')
 
 if (
-  !home.includes('<title>DayZ Cheats | DayZ Cheat Aimbot, ESP &amp; Hacks</title>')
+  !home.includes('<title>R6 Cheats | Aimbot, ESP &amp; BattlEye Status</title>')
 ) {
-  fail('Homepage does not own the exact transactional title')
+  fail('Homepage does not own the exact brand/status title')
 }
-if (product.includes('<title>Buy DayZ Cheats')) fail('Product details page competes with homepage')
+if (product.includes('<title>Buy R6 Cheats |')) fail('Product details page competes with buy title')
 if ((faq.match(/"@type":"FAQPage"/g) || []).length !== 1) fail('/faq must own one FAQPage')
 for (const [name, html] of [
   ['home', home],
@@ -99,7 +99,7 @@ for (const [name, html] of [
   ['product', product],
   ['reviews', reviews],
 ]) {
-  if (!html.includes('"@id":"https://dayzcheats.io/#product"')) {
+  if (!html.includes('"@id":"https://r6cheats.org/#product"')) {
     fail(`${name}: missing shared Product ID`)
   }
 }
@@ -137,8 +137,8 @@ for (const file of files) {
   const twImage = html.match(/<meta name="twitter:image" content="([^"]+)"/)?.[1]
   const robotsMeta = html.match(/<meta name="robots" content="([^"]+)"/)?.[1]
 
-  if (!ogImage?.startsWith('https://dayzcheats.io/og/') || !ogImage.endsWith('.jpg')) {
-    fail(`${page}: og:image must be https://dayzcheats.io/og/*.jpg for SERP thumbnails`)
+  if (!ogImage?.startsWith('https://r6cheats.org/og/') || !ogImage.endsWith('.jpg')) {
+    fail(`${page}: og:image must be https://r6cheats.org/og/*.jpg for SERP thumbnails`)
   }
   if (!twImage || twImage !== ogImage) {
     fail(`${page}: twitter:image must match og:image`)
@@ -163,21 +163,28 @@ for (const [name, html] of [
   ['product', product],
   ['forums', forums],
 ]) {
-  if (!html.includes('/media/dayz-')) {
-    fail(`${name}: missing visible DayZ media in page body`)
+  if (!html.includes('/media/r6-')) {
+    fail(`${name}: missing visible R6 media in page body`)
   }
+}
+const pricing = readFileSync(join(dist, 'pricing', 'index.html'), 'utf8')
+if (
+  !pricing.includes('<title>Buy R6 Cheats | $35 Monthly &amp; $150 Lifetime</title>')
+) {
+  fail('/pricing must own the Buy R6 Cheats transactional title')
 }
 for (const [name, html, og] of [
   ['reviews', reviews, '/og/reviews.jpg'],
   ['faq', faq, '/og/faq.jpg'],
   ['support', support, '/og/support.jpg'],
+  ['pricing', pricing, '/og/pricing.jpg'],
 ]) {
   if (!html.includes(og)) {
     fail(`${name}: missing Open Graph image ${og}`)
   }
 }
-if (!product.includes('/videos/dayz-preview.mp4') || !product.includes('/media/dayz-video-thumb.jpg')) {
-  fail('Product page is missing the self-hosted DayZ preview video')
+if (!product.includes('/videos/r6-gameplay.mp4') || !product.includes('/media/r6-video-thumb.jpg')) {
+  fail('Product page is missing the self-hosted R6 preview video')
 }
 if (home.includes('iframe.mediadelivery.net') || product.includes('iframe.mediadelivery.net')) {
   fail('Pages still embed blocked mediadelivery video (403 off-domain)')
@@ -193,11 +200,11 @@ if (
 const sitemap = readFileSync(join(dist, 'sitemap.xml'), 'utf8')
 if (sitemap.includes('<sitemapindex')) fail('sitemap.xml must be a single urlset, not an index')
 if (/forums\/(instructions|how-to-load)/.test(sitemap)) fail('Retired forum remains in sitemap.xml')
-if (!sitemap.includes('https://dayzcheats.io/')) {
-  fail('sitemap.xml must use https://dayzcheats.io URLs')
+if (!sitemap.includes('https://r6cheats.org/')) {
+  fail('sitemap.xml must use https://r6cheats.org URLs')
 }
-if (!sitemap.includes('/videos/dayz-preview.mp4')) {
-  fail('sitemap.xml missing DayZ preview video entry')
+if (!sitemap.includes('/videos/r6-gameplay.mp4')) {
+  fail('sitemap.xml missing R6 preview video entry')
 }
 if (!sitemap.includes('xmlns:video=')) {
   fail('sitemap.xml missing video namespace for Google video indexing')
@@ -216,16 +223,17 @@ const uniqueSitemapUrls = new Set(pageLocs)
 const imageLocs = [...sitemap.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map((match) => match[1])
 const requiredImages = [
   '/og/home.jpg',
-  '/og/dayz-cheats.jpg',
+  '/og/r6-cheats.jpg',
   '/og/forums.jpg',
   '/og/reviews.jpg',
   '/og/faq.jpg',
   '/og/support.jpg',
-  '/media/dayz-hero-full.webp',
-  '/media/dayz-cover.webp',
-  '/media/dayz-esp-gameplay.gif',
-  '/media/dayz-menu.gif',
-  '/media/dayz-video-thumb.jpg',
+  '/og/pricing.jpg',
+  '/media/r6-hero-full.webp',
+  '/media/r6-cover.webp',
+  '/media/r6-esp-gameplay.webp',
+  '/media/r6-menu.webp',
+  '/media/r6-video-thumb.jpg',
 ]
 
 for (const url of expectedUrls) {
@@ -276,7 +284,7 @@ if (!existsSync(join(dist, 'robots.txt'))) fail('dist/robots.txt is missing')
 if (!existsSync(join(dist, '_routes.json'))) fail('dist/_routes.json is missing')
 
 const robots = readFileSync(join(dist, 'robots.txt'), 'utf8')
-if (!robots.includes('Sitemap: https://dayzcheats.io/sitemap.xml')) {
+if (!robots.includes('Sitemap: https://r6cheats.org/sitemap.xml')) {
   fail('robots.txt must point at the canonical HTTPS sitemap')
 }
 if (!robots.includes('Allow: /sitemap.xml')) {
@@ -296,18 +304,19 @@ if (!routes.exclude?.includes('/sitemap.xml') || !routes.exclude?.includes('/rob
 
 for (const asset of [
   'public/og/home.jpg',
-  'public/og/dayz-cheats.jpg',
+  'public/og/r6-cheats.jpg',
   'public/og/forums.jpg',
   'public/og/reviews.jpg',
   'public/og/faq.jpg',
   'public/og/support.jpg',
-  'public/media/dayz-hero-full.webp',
-  'public/media/dayz-cover.webp',
-  'public/media/dayz-box.jpg',
-  'public/media/dayz-esp-gameplay.gif',
-  'public/media/dayz-menu.gif',
-  'public/media/dayz-video-thumb.jpg',
-  'public/videos/dayz-preview.mp4',
+  'public/og/pricing.jpg',
+  'public/media/r6-hero-full.webp',
+  'public/media/r6-cover.webp',
+  'public/media/r6-box.jpg',
+  'public/media/r6-esp-gameplay.webp',
+  'public/media/r6-menu.webp',
+  'public/media/r6-video-thumb.jpg',
+  'public/videos/r6-gameplay.mp4',
   'public/sitemap.css',
   'public/_routes.json',
   'functions/_middleware.js',
@@ -323,10 +332,10 @@ if (!redirects.includes('/sitemap-index.xml')) {
   fail('_redirects missing sitemap-index.xml -> /sitemap.xml redirect')
 }
 if (!redirects.includes('/tarkov-cheats')) {
-  fail('_redirects must map the legacy /tarkov-cheats route to /dayz-cheats')
+  fail('_redirects must map the legacy /tarkov-cheats route to /r6-cheats')
 }
-if (!redirects.includes('/dayz-hacks')) {
-  fail('_redirects must map the /dayz-hacks keyword alias to /dayz-cheats')
+if (!redirects.includes('/r6-hacks')) {
+  fail('_redirects must map the /r6-hacks keyword alias to /r6-cheats')
 }
 
 const worker = readFileSync(join(root, 'workers', 'site.js'), 'utf8')

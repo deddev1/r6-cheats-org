@@ -1,7 +1,7 @@
 ﻿# Videos
 
-Self-hosted DayZ / DayZ Cheats media:
-- `/videos/dayz-preview.mp4` — battlelog DayZ Reaper preview (no third-party embeds)
-- `/media/dayz-hero-full.webp`, `dayz-cover.webp`, `dayz-box.jpg` — product art
-- `/media/dayz-menu.gif`, `dayz-esp-gameplay.gif` — menu/ESP stills
-- `/media/dayz-video-thumb.jpg` — preview poster frame
+Self-hosted R6 Cheats media:
+- `/videos/r6-hero.mp4` — purple-tinted hero loop
+- `/videos/r6-gameplay.mp4` / `r6-preview.mp4` — clean feature preview
+- `/media/r6-*.webp` / `.jpg` — gameplay stills from the preview video
+- `/media/r6-video-thumb.jpg` — preview poster frame
