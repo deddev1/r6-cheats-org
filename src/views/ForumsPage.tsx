@@ -4,8 +4,8 @@ import { Navbar } from '../components/Navbar'
 import { SiteFooter } from '../components/SiteFooter'
 import { VideoBg } from '../components/VideoBg'
 import { HeroSearch } from '../components/HeroSearch'
+import { CheckoutLink } from '../components/CheckoutLink'
 import { BLOGS, blogPath } from '../data/blogs'
-import { guidePath } from '../data/games'
 import { SITE_HOST } from '../data/site'
 import { RelatedLinks } from '../components/RelatedLinks'
 
@@ -32,7 +32,7 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
   return (
     <div className="min-h-screen overflow-x-hidden bg-z-bg text-white">
       <section className="relative flex min-h-[60vh] flex-col overflow-x-clip sm:min-h-[65vh]">
-        <VideoBg imageAlt="R6 cheats Aimbot and ESP gameplay" />
+        <VideoBg imageAlt="Forums – poster" />
         <div className="relative z-20 flex min-h-[60vh] flex-col sm:min-h-[65vh]">
           <Navbar onVideo />
           <div className="page-x mt-auto pb-10 sm:pb-14">
@@ -41,11 +41,11 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
                 Forums · Setup · {SITE_HOST}
               </p>
               <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-                R6 Cheats Forums
+                Forums — R6 Setup & Loader Guides
               </h1>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/70">
-                Setup threads for R6 Cheats — features, hotkeys, complete setup,
-                disable antivirus, how to load, and live BattlEye status before you checkout.
+                These forums collect setup threads — features, hotkeys, complete setup, antivirus
+                exclusions, load order and live BattlEye status before you checkout.
               </p>
               <div className="relative z-50 mt-7">
                 <HeroSearch
@@ -75,12 +75,9 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
                   before checkout.
                 </p>
               </div>
-              <a
-                href={guidePath('r6')}
-                className="cta-gradient inline-flex shrink-0 items-center justify-center rounded-full px-6 py-3 text-sm font-medium text-white"
-              >
+              <CheckoutLink className="cta-gradient inline-flex shrink-0 items-center justify-center rounded-full px-6 py-3 text-sm font-medium text-white">
                 Buy R6 Cheats
-              </a>
+              </CheckoutLink>
             </div>
 
             <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">

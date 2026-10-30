@@ -74,39 +74,39 @@ export const SEO = {
     robots: INDEX_ROBOTS,
   },
   forums: {
-    title: 'R6 Cheats Forums | Aimbot, ESP, Radar & Status',
+    title: 'Forums | R6 Setup, Aimbot, ESP & Status Threads',
     description:
-      'R6 cheats forums — silent aim, player and gadget ESP, radar hack, antivirus exclusions, loader setup and BattlEye status threads before you buy.',
+      'Forums for Rainbow Six Siege setup — Aimbot, ESP, antivirus exclusions, loader steps and BattlEye status threads on r6cheats.org.',
     path: '/forums',
     ogType: 'website',
     image: PAGE_OG.forums,
-    imageAlt: 'R6 Cheats setup forums for Aimbot, ESP and BattlEye',
+    imageAlt: 'Forums — R6 setup threads and loader guides',
     robots: INDEX_ROBOTS,
   },
   reviews: {
-    title: 'R6 Cheats Reviews | Buyer Feedback on R6 Hacks',
+    title: 'Reviews | R6 Buyer Ratings & Patch Feedback',
     description:
-      'Read R6 cheats reviews covering silent aim, player ESP, gadget ESP and BattlEye rebuilds before you buy a Rainbow Six Siege license for PC.',
+      'Reviews from Rainbow Six Siege buyers — ESP accuracy, BattlEye status honesty, loader delivery and how builds held after patches.',
     path: '/reviews',
     ogType: 'website',
     image: PAGE_OG.reviews,
-    imageAlt: 'R6 Cheats buyer reviews for Rainbow Six Siege',
+    imageAlt: 'Reviews — buyer ratings for Rainbow Six Siege licenses',
     robots: INDEX_ROBOTS,
   },
   faq: {
-    title: 'R6 Cheats FAQ | Price, BattlEye Status & Setup',
+    title: 'FAQ | R6 Price, BattlEye Status & Loader Setup',
     description:
-      'FAQ for buying R6 cheats on Windows PC — price, Aimbot and ESP features, BattlEye status, private server support, loader setup and delivery.',
+      'FAQ for Rainbow Six Siege licenses — price, Aimbot and wallhack features, BattlEye status, servers, loader setup and delivery on PC.',
     path: '/faq',
     ogType: 'website',
     image: PAGE_OG.faq,
-    imageAlt: 'R6 Cheats FAQ — price, BattlEye and setup',
+    imageAlt: 'FAQ — price, BattlEye status and setup answers',
     robots: INDEX_ROBOTS,
   },
   support: {
     title: 'R6 Cheats Support | Loader, Delivery & Setup Help',
     description:
-      'Get help buying and loading R6 cheats — delivery email, Windows setup, antivirus exclusions, loader errors and BattlEye status updates.',
+      'Support: Get help buying and loading R6 cheats — delivery email, Windows setup, antivirus exclusions, loader errors and BattlEye status updates.',
     path: '/support',
     ogType: 'website',
     image: PAGE_OG.support,
@@ -114,13 +114,13 @@ export const SEO = {
     robots: INDEX_ROBOTS,
   },
   product: {
-    title: 'R6 Cheats — Aimbot, ESP & Wallhack | From $35',
+    title: 'ESP Wallhack | R6 Aimbot, Gadget ESP & Radar',
     description:
-      'Buy R6 Cheats for Rainbow Six Siege — silent aim Aimbot, player ESP, gadget ESP, wallhack, radar hack and spoofer with live BattlEye status. Licenses from $35.',
+      'ESP wallhack for Rainbow Six Siege — player boxes, gadget highlighting, silent aim Aimbot and radar overlay with live BattlEye status. From $35.',
     path: '/r6-cheats',
     ogType: 'product',
     image: PAGE_OG.product,
-    imageAlt: 'R6 Aimbot, ESP and radar hack product details',
+    imageAlt: 'ESP wallhack — R6 player boxes, gadget ESP and Aimbot preview',
     robots: INDEX_ROBOTS,
   },
   pricing: {
@@ -138,9 +138,9 @@ export const SEO = {
 export const HOME_HEADINGS = {
   h1: 'R6 Cheats — Aimbot, ESP & Hacks',
   h2Features: 'R6 Aimbot, ESP, gadget ESP & radar hack',
-  h2About: 'Clear BattlEye status before you buy R6 cheats',
-  h2Access: 'Buy R6 Cheats',
-  h2Faq: 'R6 Cheats FAQ',
+  h2About: 'Clear BattlEye status before you checkout',
+  h2Access: 'Get your license',
+  h2Faq: 'Questions before checkout',
 } as const
 
 export function absoluteUrl(path: string) {

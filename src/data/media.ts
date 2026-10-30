@@ -158,13 +158,13 @@ const FORUM_MEDIA: Record<string, SeoMediaItem> = {
   },
   'raid-play-guide': {
     image: '/media/carousel/r6-gameplay-12.webp',
-    alt: 'Rainbow Six Siege attack and defend guide — R6 Cheats ESP and Aimbot during a live site push',
+    alt: 'Safer R6 – Rainbow Six Siege attack and defend guide — R6 Cheats ESP and Aimbot during a live site',
     title: 'Attack and Defend Guide gameplay',
     caption: 'Site-push gameplay with ESP and Aimbot for attack and defend rounds.',
   },
   'loader-errors': {
     image: '/media/carousel/r6-gameplay-13.webp',
-    alt: 'Rainbow Six Siege loader errors guide — R6 Cheats ESP gameplay after fixing loader and injection issues',
+    alt: 'R6 Cheats Loader Errors – Rainbow Six Siege loader errors guide — R6 Cheats ESP gameplay after fixing inject',
     title: 'R6 Loader Errors gameplay',
     caption: 'ESP gameplay after resolving common loader and injection errors.',
   },

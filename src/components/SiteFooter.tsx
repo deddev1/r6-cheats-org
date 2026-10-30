@@ -40,7 +40,7 @@ export function SiteFooter({ currentPath }: SiteFooterProps) {
               <span className="font-semibold text-z-ink">{SITE_NAME}</span>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-white/55">
-              R6 Cheats for PC — silent aim Aimbot, ESP, wallhack, radar hack and live BattlEye
+              Rainbow Six Siege tools for PC — silent aim Aimbot, ESP, wallhack, radar hack and live BattlEye
               status for Rainbow Six Siege operators worldwide.
             </p>
           </div>

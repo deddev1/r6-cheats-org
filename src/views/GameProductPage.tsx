@@ -115,17 +115,17 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
                 </p>
 
                 <h1 className="mt-3 text-2xl font-semibold leading-tight tracking-tight text-white sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
-                  R6 Cheats — Aimbot, ESP & Wallhack
+                  ESP Wallhack — Aimbot, Gadget ESP & Radar
                 </h1>
                 <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/55 sm:mt-4 sm:text-base">
-                  Silent aim Aimbot, player ESP, wallhack, gadget ESP and radar hack for Rainbow Six
-                  Siege on Windows PC. Licenses from ${PRODUCT_PRICE_USD} with live BattlEye status
-                  before you buy.
+                  ESP wallhack with player boxes, gadget highlighting, silent aim Aimbot and radar
+                  overlay for Rainbow Six Siege on Windows PC. Licenses from ${PRODUCT_PRICE_USD}{' '}
+                  with live BattlEye status before you buy.
                 </p>
 
                 <div className="mt-8">
                   <h2 className="text-lg font-semibold tracking-tight text-white sm:text-xl">
-                    Feature preview
+                    ESP wallhack: Feature preview
                   </h2>
                   <p className="mt-2 text-sm text-white/45">{R6_HOME_VIDEO.caption}</p>
                   <R6Preview className="mt-4" wide />

@@ -25,22 +25,22 @@ export type BlogPost = {
 export const BLOGS: BlogPost[] = [
   {
     slug: 'features-list',
-    title: 'R6 Cheat Features Checklist',
+    title: 'Features Checklist for R6 Modules',
     excerpt:
-      'Checklist of every R6 cheat module on r6cheats.org — silent aim, player ESP, gadget ESP, wallhack, radar hack and spoofer — before you open checkout from $35.',
-    metaTitle: 'R6 Cheat Features Checklist | Aimbot ESP Radar',
+      'Features checklist for every module on r6cheats.org — silent aim, player boxes, gadget highlighting, wallhack, radar hack and spoofer — before checkout from $35.',
+    metaTitle: 'Features Checklist | R6 Aimbot ESP Radar Modules',
     metaDescription:
-      'R6 cheat features checklist: silent aim Aimbot, player ESP, gadget ESP, wallhack, radar hack and spoofer on r6cheats.org from $35. Compare modules before you buy.',
+      'R6 cheat features checklist: silent aim Aimbot, player ESP, gadget ESP, wallhack, radar hack and spoofer on r6cheats.org from $35.',
     searchTerms: 'r6 cheat features checklist r6 cheats aimbot esp wallhack radar hack',
     date: '2026-09-17',
     readMinutes: 2,
     tag: 'Features',
     sections: [
       {
-        heading: 'Use this checklist before checkout',
+        heading: 'Features: Use this checklist before checkout',
         body: [
-          'Searching “r6 cheats” or “r6 cheat” usually means one question: what is actually included? This guide is the module checklist — not the price page. Open Product details for live BattlEye status and checkout from $35.',
-          'R6 Cheats on r6cheats.org is a single Rainbow Six Siege product for Windows PC: one loader, one license, clear-to-load or Updating against BattlEye. Official and many modded private servers are supported when the build allows it.',
+          'Searching for a module list usually means one question: what is actually included? This guide is the features checklist — not the price page. Open Product details for live BattlEye status and checkout from $35.',
+          'r6cheats.org ships a single Rainbow Six Siege product for Windows PC: one loader, one license, clear-to-load or Updating against BattlEye. Official and many modded private servers are supported when the build allows it.',
         ],
       },
       {
@@ -81,7 +81,7 @@ export const BLOGS: BlogPost[] = [
       'Tune R6 Aimbot FOV, smoothing, hitbox and silent aim so operator tracking stays effective without looking robotic to spectating admins.',
     metaTitle: 'R6 Aimbot Settings | Silent Aim FOV & Smoothing',
     metaDescription:
-      'R6 Aimbot settings for PC: silent aim, FOV, smoothing and visible-check so your R6 cheat looks legit on official and private servers. Start conservative, then save configs.',
+      'R6 Aimbot settings for PC: silent aim, FOV, smoothing and visible-check so your R6 cheat looks legit on official and private servers.',
     searchTerms: 'r6 aimbot settings silent aim fov smoothing r6 cheat r6 cheats',
     date: '2026-09-17',
     readMinutes: 2,
@@ -89,7 +89,7 @@ export const BLOGS: BlogPost[] = [
     howTo: true,
     sections: [
       {
-        heading: 'Start conservative',
+        heading: 'Aimbot Settings: Start conservative',
         body: [
           'Blatant Aimbot is the fastest report on a R6 server — private admins spectate more often than BattlEye alone catches. Start with a tight FOV, heavy smoothing and chest or nearest-bone targeting before head-only snap.',
           'Confirm live BattlEye status first. Aimbot settings cannot save a detected build after a Ubisoft or BattlEye update.',
@@ -122,12 +122,12 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'esp-wallhack-guide',
-    title: 'R6 ESP and Wallhack Setup',
+    title: 'Wallhack Setup — Operator Boxes & Gadgets',
     excerpt:
-      'Configure R6 ESP and wallhack for operator boxes, gadgets tracking and gadget highlighting without flooding your HUD.',
-    metaTitle: 'R6 ESP Wallhack Setup | Operators & Gadgets',
+      'Configure wallhack overlays for operator boxes, gadget tracking and highlighting without flooding your HUD on Rainbow Six Siege.',
+    metaTitle: 'ESP Wallhack Setup | R6 Operators & Gadgets',
     metaDescription:
-      'R6 ESP and wallhack setup: operator boxes, skeletons, distance, health, gadget ESP and gadget highlighting. Clean HUD defaults for R6 cheats on PC.',
+      'Wallhack setup: operator boxes, skeletons, distance, health, gadget highlighting and clean HUD defaults for Rainbow Six Siege on PC.',
     searchTerms: 'r6 esp wallhack r6 cheats gadget esp player boxes gadgets r6 cheat',
     date: '2026-09-17',
     readMinutes: 2,
@@ -135,25 +135,25 @@ export const BLOGS: BlogPost[] = [
     howTo: true,
     sections: [
       {
-        heading: 'What R6 ESP actually does',
+        heading: 'What wallhack awareness does',
         body: [
-          'R6 ESP draws operators and gadgets through walls before you expose yourself. It does not pull the trigger.',
-          'Most searches for “r6 wallhack” or “r6 esp” want this awareness layer — in a game where one round decides the site, information beats loud Aimbot.',
+          'Wallhack draws operators and gadgets through walls before you expose yourself. It does not pull the trigger.',
+          'Most players want this awareness layer — in a game where one round decides the site, information beats loud Aimbot.',
         ],
       },
       {
-        heading: 'Player and gadget ESP',
+        heading: 'Player boxes and gadget highlighting',
         body: [
           'Enable boxes or skeletons, distance and health. Colour-code hostiles clearly and keep friendlies distinct.',
-          'Gadget ESP is underrated — see the roamer behind soft wall before they ruin a quiet plant.',
+          'Gadget highlighting is underrated — see the roamer behind soft wall before they ruin a quiet plant.',
           'Limit max distance so the HUD is not flooded with off-site contacts you cannot fight yet.',
         ],
       },
       {
-        heading: 'Gadget ESP filters',
+        heading: 'Gadget filters',
         body: [
           'Filter by category: cameras, traps, deployables and utility. Showing every prop creates tunnel vision.',
-          'On private servers, pair gadget ESP with radar so executes hit site with full information.',
+          'On private servers, pair gadget tracking with radar so executes hit site with full information.',
         ],
       },
       {
@@ -179,7 +179,7 @@ export const BLOGS: BlogPost[] = [
     howTo: true,
     sections: [
       {
-        heading: 'Why radar matters in R6',
+        heading: 'Radar Hack: Why radar matters in R6',
         body: [
           'Most R6 deaths are information gaps — the sniper above site, the duo already in objective, the third party that heard your gunfight. A radar hack closes that gap without forcing Aimbot.',
           'Buyers searching “r6 radar hack” want macro awareness for rotations between towns, military zones and base.',
@@ -202,12 +202,12 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'hotkeys',
-    title: 'R6 Cheats Hotkeys After Load',
+    title: 'Hotkeys After Load — Menu & Toggles',
     excerpt:
-      'Menu and toggle hotkeys for R6 cheats after a clean load — Aimbot, ESP, gadget ESP, radar and panic binds.',
-    metaTitle: 'R6 Cheats Hotkeys | Menu ESP Aimbot Toggles',
+      'Hotkeys after a clean load — menu open, Aimbot toggle, player boxes, gadget highlighting, radar and panic binds for Rainbow Six Siege.',
+    metaTitle: 'Hotkeys Guide | R6 Menu ESP Aimbot Binds',
     metaDescription:
-      'R6 cheats hotkeys after checkout: open menu, Aimbot toggle, player ESP, gadget ESP, radar hack and stream-proof binds. Keep panic keys minimal for field use.',
+      'Hotkeys after checkout: open menu, Aimbot toggle, player ESP, gadget ESP, radar hack and stream-proof binds. Keep panic keys minimal for field use.',
     searchTerms: 'r6 cheats hotkeys menu esp aimbot radar toggles r6 cheat',
     date: '2026-09-17',
     readMinutes: 2,
@@ -215,9 +215,9 @@ export const BLOGS: BlogPost[] = [
     howTo: true,
     sections: [
       {
-        heading: 'After a clean load',
+        heading: 'Hotkeys: After a clean load',
         body: [
-          'Buy R6 Cheats on r6cheats.org (from $35), confirm live BattlEye status, launch R6, run the loader, then open the menu with the key in your delivery notes.',
+          'Buy on r6cheats.org (from $35), confirm live BattlEye status, launch R6, run the loader, then open the menu with the key in your delivery notes.',
           'If the menu does not open, do not spam keys — contact support with your order ID.',
         ],
       },
@@ -243,7 +243,7 @@ export const BLOGS: BlogPost[] = [
       'Step-by-step R6 cheats setup: buy from $35, antivirus exclusions, load order, enable ESP and Aimbot, save configs, re-check BattlEye.',
     metaTitle: 'R6 Cheats Setup Guide | Complete Loader Steps',
     metaDescription:
-      'Complete R6 cheats setup for Windows PC: buy when status is clear, antivirus exclusions, load order, first-run ESP and Aimbot config, then re-check BattlEye after every patch.',
+      'Complete R6 cheats setup for Windows PC: buy when status is clear, antivirus exclusions, load order, first-run ESP and Aimbot config, then re-check BattlEye.',
     searchTerms: 'r6 cheats setup load order windows complete guide r6 cheat',
     date: '2026-09-17',
     readMinutes: 2,
@@ -295,9 +295,9 @@ export const BLOGS: BlogPost[] = [
     howTo: true,
     sections: [
       {
-        heading: 'Supported systems',
+        heading: 'Windows: Supported systems',
         body: [
-          'R6 Cheats targets Rainbow Six Siege on Windows 10 and Windows 11 (Intel and AMD). Keep Windows stable enough that the R6 launcher starts cleanly, then freeze major changes mid-session.',
+          'Rainbow Six Siege licenses target Windows 10 and Windows 11 (Intel and AMD). Keep Windows stable enough that the R6 launcher starts cleanly, then freeze major changes mid-session.',
         ],
       },
       {
@@ -317,12 +317,12 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'disable-antivirus',
-    title: 'Antivirus Exclusions for R6 Cheats',
+    title: 'Antivirus Exclusions for R6 Loaders',
     excerpt:
-      'Allowlist R6 cheats in Windows Defender and common antivirus so the loader is not quarantined before first run.',
-    metaTitle: 'R6 Cheats Antivirus Exclusions | Defender',
+      'Allowlist loaders in Windows Defender and common antivirus so the delivery folder is not quarantined before first run on PC.',
+    metaTitle: 'Antivirus Exclusions | R6 Defender Allowlist',
     metaDescription:
-      'Allowlist R6 cheats loaders in Windows Defender and third-party antivirus before you load. Restore quarantines, exclude the delivery folder, then continue setup when status is clear.',
+      'Allowlist R6 cheats loaders in Windows Defender and third-party antivirus before you load. Restore quarantines, exclude the delivery folder, then continue.',
     searchTerms: 'r6 cheats antivirus defender exclusion quarantine loader r6 cheat',
     date: '2026-09-17',
     readMinutes: 2,
@@ -330,7 +330,7 @@ export const BLOGS: BlogPost[] = [
     howTo: true,
     sections: [
       {
-        heading: 'Why loaders get flagged',
+        heading: 'Antivirus: Why loaders get flagged',
         body: [
           'Cheat loaders often trip generic heuristics even from a legitimate r6cheats.org purchase. Exclusion comes before you spam launch into R6.',
         ],
@@ -357,7 +357,7 @@ export const BLOGS: BlogPost[] = [
       'Hide R6 ESP, gadget highlighting and Aimbot overlays from OBS and capture tools with stream-proof mode.',
     metaTitle: 'Stream-Proof R6 Cheats | OBS Safe Overlay',
     metaDescription:
-      'Stream-proof R6 cheats for OBS and clips: keep ESP, wallhack and Aimbot overlays off recordings while you still see them locally. Test with a private capture first.',
+      'Stream proof setup for OBS: keep ESP, wallhack and Aimbot overlays off recordings while you still see them locally on your PC.',
     searchTerms: 'r6 stream proof cheats esp obs hide overlay clips r6 cheat',
     date: '2026-09-17',
     readMinutes: 2,
@@ -399,7 +399,7 @@ export const BLOGS: BlogPost[] = [
     tag: 'Status',
     sections: [
       {
-        heading: 'Status is part of the product',
+        heading: 'BattlEye Status: Status is part of the product',
         body: [
           'BattlEye updates can invalidate a build overnight. r6cheats.org shows clear-to-load or Updating so you are not buying a dead loader from a Discord screenshot.',
           'Licenses start from $35 — honest status beats fake always-safe marketing against BattlEye.',
@@ -433,14 +433,14 @@ export const BLOGS: BlogPost[] = [
       'Short BattlEye status checklist for R6 cheats — confirm clear-to-load before checkout and before every post-patch session.',
     metaTitle: 'BattlEye Status Checklist | Before You Buy R6 Cheats',
     metaDescription:
-      'BattlEye status checklist for R6 cheats: confirm clear-to-load before checkout and before every post-patch session. Wait when Updating; buy from $35 when status is live.',
+      'BattlEye status checklist for R6 cheats: confirm clear-to-load before checkout and before every post-patch session.',
     searchTerms: 'r6 cheats status checklist before buy load battleye undetected r6 cheats',
     date: '2026-09-17',
     readMinutes: 2,
     tag: 'Status',
     sections: [
       {
-        heading: 'Before checkout',
+        heading: 'Status: Before checkout',
         body: [
           'Confirm clear-to-load status on the homepage or product page. If Updating, wait or read Refunds for extended downtime. Prices start from $35 when status is live.',
         ],
@@ -461,19 +461,19 @@ export const BLOGS: BlogPost[] = [
   },
 {
     slug: 'raid-play-guide',
-    title: 'Safer R6 Cheat Settings for Site Pushes',
+    title: 'Safer R6 Settings for Site Pushes',
     excerpt:
-      'Safer R6 cheat defaults for attack and site pushes — ESP-first play, mild silent aim, radar awareness and report-conscious habits.',
-    metaTitle: 'Safer R6 Cheat Settings | Site Push Defaults',
+      'Safer R6 defaults for attack and site pushes — awareness-first play, mild silent aim, radar tracking and report-conscious habits on Siege maps.',
+    metaTitle: 'Safer R6 Settings | Site Push & Ranked Defaults',
     metaDescription:
-      'Safer R6 cheat settings for site pushes and ranked play: ESP-first play, mild silent aim, gadget highlighting, radar hack and BattlEye habits that reduce report risk.',
+      'Safer R6 cheat settings for site pushes and ranked play: ESP-first play, mild silent aim, gadget highlighting, radar hack and BattlEye habits that reduce.',
     searchTerms: 'r6 cheat settings site push ranked safer defaults esp aimbot r6 cheats',
     date: '2026-09-17',
     readMinutes: 2,
     tag: 'Attack',
     sections: [
       {
-        heading: 'R6 is a report environment',
+        heading: 'Safer R6: R6 is a report environment',
         body: [
           'BattlEye is not the only risk. Private admins spectate reports, and an operator who lost a round will write that report. Conservative visuals beat loud Aimbot.',
         ],
@@ -502,7 +502,7 @@ export const BLOGS: BlogPost[] = [
       'Troubleshoot R6 cheats loader errors — menu not opening, instant close, antivirus quarantine and failed inject.',
     metaTitle: 'Fix R6 Cheats Loader Errors | Inject & Menu',
     metaDescription:
-      'Fix R6 cheats loader errors on Windows: antivirus quarantine, overlays, failed inject and menu not opening. Confirm BattlEye status is clear first, then escalate with your order ID.',
+      'Fix R6 cheats loader errors on Windows: antivirus quarantine, overlays, failed inject and menu not opening. Confirm BattlEye status is clear first, then.',
     searchTerms: 'r6 cheats loader error inject failed menu not opening fix',
     date: '2026-09-17',
     readMinutes: 2,
@@ -510,7 +510,7 @@ export const BLOGS: BlogPost[] = [
     howTo: true,
     sections: [
       {
-        heading: 'Stop and check status',
+        heading: 'R6 Cheats Loader Errors: Stop and check status',
         body: [
           'First question: is the product clear to load against BattlEye? Updating builds fail for reasons no setting can fix.',
         ],

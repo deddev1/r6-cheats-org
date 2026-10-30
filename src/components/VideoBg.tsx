@@ -31,12 +31,11 @@ export function VideoBg({
       </video>
       <img
         src={poster}
-        alt=""
+        alt={imageAlt}
         width={1280}
         height={720}
         decoding="async"
         fetchPriority="high"
-        aria-hidden
         className="pointer-events-none absolute inset-0 z-0 h-full w-full object-cover opacity-0"
       />
       <div className="hero-video-tint pointer-events-none absolute inset-0 z-[2]" aria-hidden />

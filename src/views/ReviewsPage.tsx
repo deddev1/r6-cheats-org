@@ -36,11 +36,11 @@ export function ReviewsPage() {
               {SITE_NAME}
             </p>
             <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-              R6 Cheats Reviews
+              Reviews — Rainbow Six Siege Buyers
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/60">
-              Feedback from players who bought R6 Cheats — ESP accuracy, status honesty, and
-              whether the build held after the last BattlEye patch.
+              Reviews from players who bought a license — ESP accuracy, status honesty, and whether
+              the build held after the last BattlEye patch.
             </p>
 
             <div className="page-card mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-2xl px-5 py-4 sm:px-6">
@@ -90,7 +90,7 @@ export function ReviewsPage() {
 
         <section className="page-x border-t border-z-soft/15 py-12 sm:py-14">
           <div className="mx-auto max-w-6xl">
-            <RelatedLinks page="reviews" />
+            <RelatedLinks page="reviews" heading="Reviews: Related pages" />
           </div>
         </section>
 
@@ -98,7 +98,7 @@ export function ReviewsPage() {
           <div className="mx-auto flex max-w-6xl flex-col gap-5 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
             <div className="min-w-0 flex-1">
               <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
-                Ready to buy R6 Cheats?
+                Ready to buy?
               </h2>
               <p className="mt-2 max-w-md text-sm text-white/50">
                 Confirm live BattlEye status on the product page, then checkout.

@@ -69,10 +69,22 @@ export const SITE_FAQS: FaqItem[] = [
 
 /** Commercial questions shown on the homepage; FAQ schema lives on /faq only. */
 export const HOME_FAQS: FaqItem[] = [
-  SITE_FAQS[1],
-  SITE_FAQS[4],
-  SITE_FAQS[5],
-  SITE_FAQS[9],
+  {
+    q: 'How much does a license cost?',
+    a: 'Monthly plans are $35 or $150 lifetime. Always confirm live BattlEye status on r6cheats.org before checkout.',
+  },
+  {
+    q: 'How do you handle BattlEye updates?',
+    a: 'We publish live clear-to-load or Updating labels after R6 and BattlEye patches. Always check status on r6cheats.org before you load.',
+  },
+  {
+    q: 'What is R6 ESP / wallhack?',
+    a: 'Wallhack and player boxes show operators, gadgets and utility through walls with distance and health when supported. Gadget highlighting covers cameras, claymores and utility so you clear site without guessing.',
+  },
+  {
+    q: 'How do I buy a license?',
+    a: 'Start on the homepage, confirm live BattlEye status, then open Pricing for Monthly ($35) or Lifetime ($150). Review Product details for features, then checkout for digital delivery.',
+  },
 ]
 
 export const PRODUCT_PAGE_FAQS: FaqItem[] = [

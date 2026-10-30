@@ -5,7 +5,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://r6cheats.org/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://r6cheats.org/" />
@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://r6cheats.org/r6-cheats</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://r6cheats.org/r6-cheats" />
@@ -84,7 +84,7 @@
   </url>
   <url>
     <loc>https://r6cheats.org/forums</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://r6cheats.org/forums" />
@@ -110,7 +110,7 @@
     <image:image>
       <image:loc>https://r6cheats.org/og/forums-aimbot-settings.jpg</image:loc>
       <image:title>R6 Aimbot Settings for Silent Aim Open Graph</image:title>
-      <image:caption>R6 Aimbot settings for PC: silent aim, FOV, smoothing and visible-check so your R6 cheat looks legit on official and private servers. Start conservative, then save configs.</image:caption>
+      <image:caption>R6 Aimbot settings for PC: silent aim, FOV, smoothing and visible-check so your R6 cheat looks legit on official and private servers.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://r6cheats.org/media/r6-menu.webp</image:loc>
@@ -146,7 +146,7 @@
     <image:image>
       <image:loc>https://r6cheats.org/og/forums-complete-setup.jpg</image:loc>
       <image:title>Complete R6 Cheats Setup Open Graph</image:title>
-      <image:caption>Complete R6 cheats setup for Windows PC: buy when status is clear, antivirus exclusions, load order, first-run ESP and Aimbot config, then re-check BattlEye after every patch.</image:caption>
+      <image:caption>Complete R6 cheats setup for Windows PC: buy when status is clear, antivirus exclusions, load order, first-run ESP and Aimbot config, then re-check BattlEye.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://r6cheats.org/media/r6-hero-full.webp</image:loc>
@@ -163,13 +163,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://r6cheats.org/forums/disable-antivirus" />
     <image:image>
       <image:loc>https://r6cheats.org/og/forums-disable-antivirus.jpg</image:loc>
-      <image:title>Antivirus Exclusions for R6 Cheats Open Graph</image:title>
-      <image:caption>Allowlist R6 cheats loaders in Windows Defender and third-party antivirus before you load. Restore quarantines, exclude the delivery folder, then continue setup when status is clear.</image:caption>
+      <image:title>Antivirus Exclusions for R6 Loaders Open Graph</image:title>
+      <image:caption>Allowlist R6 cheats loaders in Windows Defender and third-party antivirus before you load. Restore quarantines, exclude the delivery folder, then continue.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://r6cheats.org/media/r6-control-art.jpg</image:loc>
-      <image:title>Antivirus Exclusions for R6 Cheats Artwork</image:title>
-      <image:caption>Allowlist R6 cheats in Windows Defender and common antivirus so the loader is not quarantined before first run.</image:caption>
+      <image:title>Antivirus Exclusions for R6 Loaders Artwork</image:title>
+      <image:caption>Allowlist loaders in Windows Defender and common antivirus so the delivery folder is not quarantined before first run on PC.</image:caption>
     </image:image>
   </url>
   <url>
@@ -181,13 +181,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://r6cheats.org/forums/esp-wallhack-guide" />
     <image:image>
       <image:loc>https://r6cheats.org/og/forums-esp-wallhack-guide.jpg</image:loc>
-      <image:title>R6 ESP and Wallhack Setup Open Graph</image:title>
-      <image:caption>R6 ESP and wallhack setup: operator boxes, skeletons, distance, health, gadget ESP and gadget highlighting. Clean HUD defaults for R6 cheats on PC.</image:caption>
+      <image:title>Wallhack Setup - Operator Boxes &amp; Gadgets Open Graph</image:title>
+      <image:caption>Wallhack setup: operator boxes, skeletons, distance, health, gadget highlighting and clean HUD defaults for Rainbow Six Siege on PC.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://r6cheats.org/media/r6-esp-gameplay.webp</image:loc>
-      <image:title>R6 ESP and Wallhack Setup Artwork</image:title>
-      <image:caption>Configure R6 ESP and wallhack for operator boxes, gadgets tracking and gadget highlighting without flooding your HUD.</image:caption>
+      <image:title>Wallhack Setup - Operator Boxes &amp; Gadgets Artwork</image:title>
+      <image:caption>Configure wallhack overlays for operator boxes, gadget tracking and highlighting without flooding your HUD on Rainbow Six Siege.</image:caption>
     </image:image>
   </url>
   <url>
@@ -199,13 +199,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://r6cheats.org/forums/features-list" />
     <image:image>
       <image:loc>https://r6cheats.org/og/forums-features-list.jpg</image:loc>
-      <image:title>R6 Cheat Features Checklist Open Graph</image:title>
-      <image:caption>R6 cheat features checklist: silent aim Aimbot, player ESP, gadget ESP, wallhack, radar hack and spoofer on r6cheats.org from $35. Compare modules before you buy.</image:caption>
+      <image:title>Features Checklist for R6 Modules Open Graph</image:title>
+      <image:caption>R6 cheat features checklist: silent aim Aimbot, player ESP, gadget ESP, wallhack, radar hack and spoofer on r6cheats.org from $35.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://r6cheats.org/media/r6-cover.webp</image:loc>
-      <image:title>R6 Cheat Features Checklist Artwork</image:title>
-      <image:caption>Checklist of every R6 cheat module on r6cheats.org - silent aim, player ESP, gadget ESP, wallhack, radar hack and spoofer - before you open checkout from $35.</image:caption>
+      <image:title>Features Checklist for R6 Modules Artwork</image:title>
+      <image:caption>Features checklist for every module on r6cheats.org - silent aim, player boxes, gadget highlighting, wallhack, radar hack and spoofer - before checkout from $35.</image:caption>
     </image:image>
   </url>
   <url>
@@ -217,13 +217,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://r6cheats.org/forums/hotkeys" />
     <image:image>
       <image:loc>https://r6cheats.org/og/forums-hotkeys.jpg</image:loc>
-      <image:title>R6 Cheats Hotkeys After Load Open Graph</image:title>
-      <image:caption>R6 cheats hotkeys after checkout: open menu, Aimbot toggle, player ESP, gadget ESP, radar hack and stream-proof binds. Keep panic keys minimal for field use.</image:caption>
+      <image:title>Hotkeys After Load - Menu &amp; Toggles Open Graph</image:title>
+      <image:caption>Hotkeys after checkout: open menu, Aimbot toggle, player ESP, gadget ESP, radar hack and stream-proof binds. Keep panic keys minimal for field use.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://r6cheats.org/media/r6-menu.webp</image:loc>
-      <image:title>R6 Cheats Hotkeys After Load Artwork</image:title>
-      <image:caption>Menu and toggle hotkeys for R6 cheats after a clean load - Aimbot, ESP, gadget ESP, radar and panic binds.</image:caption>
+      <image:title>Hotkeys After Load - Menu &amp; Toggles Artwork</image:title>
+      <image:caption>Hotkeys after a clean load - menu open, Aimbot toggle, player boxes, gadget highlighting, radar and panic binds for Rainbow Six Siege.</image:caption>
     </image:image>
   </url>
   <url>
@@ -236,7 +236,7 @@
     <image:image>
       <image:loc>https://r6cheats.org/og/forums-loader-errors.jpg</image:loc>
       <image:title>Fix R6 Cheats Loader Errors Open Graph</image:title>
-      <image:caption>Fix R6 cheats loader errors on Windows: antivirus quarantine, overlays, failed inject and menu not opening. Confirm BattlEye status is clear first, then escalate with your order ID.</image:caption>
+      <image:caption>Fix R6 cheats loader errors on Windows: antivirus quarantine, overlays, failed inject and menu not opening. Confirm BattlEye status is clear first, then.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://r6cheats.org/media/r6-tactical-art.jpg</image:loc>
@@ -271,13 +271,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://r6cheats.org/forums/raid-play-guide" />
     <image:image>
       <image:loc>https://r6cheats.org/og/forums-raid-play-guide.jpg</image:loc>
-      <image:title>Safer R6 Cheat Settings for Site Pushes Open Graph</image:title>
-      <image:caption>Safer R6 cheat settings for site pushes and ranked play: ESP-first play, mild silent aim, gadget highlighting, radar hack and BattlEye habits that reduce report risk.</image:caption>
+      <image:title>Safer R6 Settings for Site Pushes Open Graph</image:title>
+      <image:caption>Safer R6 cheat settings for site pushes and ranked play: ESP-first play, mild silent aim, gadget highlighting, radar hack and BattlEye habits that reduce.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://r6cheats.org/media/r6-box.jpg</image:loc>
-      <image:title>Safer R6 Cheat Settings for Site Pushes Artwork</image:title>
-      <image:caption>Safer R6 cheat defaults for attack and site pushes - ESP-first play, mild silent aim, radar awareness and report-conscious habits.</image:caption>
+      <image:title>Safer R6 Settings for Site Pushes Artwork</image:title>
+      <image:caption>Safer R6 defaults for attack and site pushes - awareness-first play, mild silent aim, radar tracking and report-conscious habits on Siege maps.</image:caption>
     </image:image>
   </url>
   <url>
@@ -290,7 +290,7 @@
     <image:image>
       <image:loc>https://r6cheats.org/og/forums-stream-proof-setup.jpg</image:loc>
       <image:title>Stream-Proof R6 Cheats for OBS Open Graph</image:title>
-      <image:caption>Stream-proof R6 cheats for OBS and clips: keep ESP, wallhack and Aimbot overlays off recordings while you still see them locally. Test with a private capture first.</image:caption>
+      <image:caption>Stream proof setup for OBS: keep ESP, wallhack and Aimbot overlays off recordings while you still see them locally on your PC.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://r6cheats.org/media/r6-home-art.jpg</image:loc>
@@ -308,7 +308,7 @@
     <image:image>
       <image:loc>https://r6cheats.org/og/forums-undetected-status.jpg</image:loc>
       <image:title>BattlEye Status Checklist Before You Buy or Load Open Graph</image:title>
-      <image:caption>BattlEye status checklist for R6 cheats: confirm clear-to-load before checkout and before every post-patch session. Wait when Updating; buy from $35 when status is live.</image:caption>
+      <image:caption>BattlEye status checklist for R6 cheats: confirm clear-to-load before checkout and before every post-patch session.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://r6cheats.org/media/r6-cover.webp</image:loc>
@@ -336,7 +336,7 @@
   </url>
   <url>
     <loc>https://r6cheats.org/pricing</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://r6cheats.org/pricing" />
@@ -349,7 +349,7 @@
   </url>
   <url>
     <loc>https://r6cheats.org/reviews</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://r6cheats.org/reviews" />
@@ -362,7 +362,7 @@
   </url>
   <url>
     <loc>https://r6cheats.org/faq</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://r6cheats.org/faq" />
@@ -375,7 +375,7 @@
   </url>
   <url>
     <loc>https://r6cheats.org/support</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://r6cheats.org/support" />
@@ -388,7 +388,7 @@
   </url>
   <url>
     <loc>https://r6cheats.org/privacy</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://r6cheats.org/privacy" />
@@ -401,7 +401,7 @@
   </url>
   <url>
     <loc>https://r6cheats.org/refunds</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.45</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://r6cheats.org/refunds" />
@@ -414,7 +414,7 @@
   </url>
   <url>
     <loc>https://r6cheats.org/terms</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://r6cheats.org/terms" />

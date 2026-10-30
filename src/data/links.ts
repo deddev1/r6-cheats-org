@@ -87,7 +87,7 @@ export const SITE_GUIDE_LINKS = [
 
 const CHECKOUT_HOST = ['za', 'deyo', '.com'].join('')
 const CHECKOUT_REF = ['Q', 'R', 'H'].join('')
-const CHECKOUT_PRODUCT = '/products/r6-cheats'
+const CHECKOUT_PRODUCT = '/products/rainbow-six-siege'
 
 export const CHECKOUT_URL = `https://${CHECKOUT_HOST}/go/${CHECKOUT_REF}?to=${encodeURIComponent(CHECKOUT_PRODUCT)}`
 

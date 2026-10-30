@@ -53,7 +53,7 @@ export function HomePage() {
   return (
     <div className="min-h-screen overflow-x-hidden text-white">
       <section id="home" className="relative flex min-h-screen flex-col overflow-x-clip">
-        <VideoBg imageAlt="R6 cheats Aimbot and ESP gameplay" />
+        <VideoBg imageAlt="R6 Cheats – poster" />
 
         <div className="relative z-20 flex min-h-screen flex-col">
           <Navbar onVideo />
@@ -186,11 +186,11 @@ export function HomePage() {
                   Forums
                 </p>
                 <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                  R6 Cheats forums
+                  Setup forum library
                 </h2>
                 <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/55 sm:text-base">
                   Bigger setup library — Aimbot, ESP, radar hack, site push tips, BattlEye status and
-                  loader fixes before you buy.
+                  loader fixes before you buy. Browse the forums index for every thread.
                 </p>
               </div>
               <a
@@ -208,7 +208,7 @@ export function HomePage() {
                 onChange={setForumQuery}
                 source="forums"
                 submitTo="filter"
-                placeholder="Search R6 cheats forums…"
+                placeholder="Search setup threads…"
               />
             </div>
 
@@ -271,7 +271,7 @@ export function HomePage() {
 
             <div className="page-card mt-8 flex flex-col gap-4 rounded-2xl p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
               <div>
-                <p className="text-lg font-semibold text-white">R6 Cheats product</p>
+                <p className="text-lg font-semibold text-white">Product overview</p>
                 <p className="mt-1 text-sm text-white/55">
                   Detailed features · BattlEye status · price · checkout
                 </p>
@@ -341,12 +341,12 @@ export function HomePage() {
                   {HOME_HEADINGS.h2Access}
                 </h2>
                 <p className="mt-4 text-sm leading-relaxed text-white/55 sm:text-base">
-                  Confirm R6 Cheats BattlEye status is clear to load, then checkout for digital delivery
-                  on supported Windows builds — worldwide.
+                  Confirm BattlEye status is clear to load, then checkout for digital delivery on
+                  supported Windows builds — worldwide.
                 </p>
               </div>
               <CheckoutLink className="cta-gradient mt-8 inline-flex w-full items-center justify-center rounded-full px-6 py-3.5 text-sm font-medium text-white transition-opacity hover:opacity-90 sm:w-fit">
-                Get R6 Cheats license
+                Get license
               </CheckoutLink>
             </div>
           </div>

@@ -102,6 +102,17 @@ const preloadOg =
     <meta name="twitter:image:alt" content={imageAlt} />
 
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <style is:inline>
+      @media (max-width: 639px) {
+        .page-x { padding-left: 1rem; padding-right: 1rem; }
+      }
+      @media (min-width: 640px) {
+        .page-x { padding-left: 1.5rem; padding-right: 1.5rem; }
+      }
+      @media (min-width: 1024px) {
+        .page-x { margin-left: auto; margin-right: auto; max-width: 72rem; }
+      }
+    </style>
   </head>
   <body class={bodyClass}>
     <a

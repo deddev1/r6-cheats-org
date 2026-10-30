@@ -2,7 +2,8 @@ import { useEffect, useId, useMemo, useRef, useState } from 'react'
 import type { KeyboardEvent, SyntheticEvent } from 'react'
 import { ArrowRight, Search } from 'lucide-react'
 import { BLOGS, blogPath } from '../data/blogs'
-import { GAMES, guidePath } from '../data/games'
+import { CHECKOUT_URL } from '../data/links'
+import { GAMES } from '../data/games'
 
 type HeroSearchProps = {
   /** Controlled value when parent owns the query (e.g. home / forums) */
@@ -92,9 +93,9 @@ export function HeroSearch({
     window.location.assign(blogPath(slug))
   }
 
-  function openGame(slug: string) {
+  function openGame(_slug: string) {
     setOpen(false)
-    window.location.assign(guidePath(slug))
+    window.open(CHECKOUT_URL, '_blank', 'noopener,noreferrer')
   }
 
   function submit(e?: SyntheticEvent) {
