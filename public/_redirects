@@ -1,0 +1,162 @@
+# Cloudflare Workers/Pages redirects (static files always win over these rules).
+# Host www/HTTP → HTTPS apex is handled by workers/site.js (not_found_handling serves 404.html).
+
+# Trailing-slash canonicalization
+/r6-cheats/   /r6-cheats   301
+/forums/      /forums      301
+/reviews/     /reviews     301
+/faq/         /faq         301
+/support/     /support     301
+/pricing/     /pricing     301
+/privacy/     /privacy     301
+/terms/       /terms       301
+/refunds/     /refunds     301
+
+# Buy / checkout aliases → pricing
+/checkout       /pricing  301
+/checkout/      /pricing  301
+/buy            /pricing  301
+/buy/           /pricing  301
+/buy-r6-cheats  /pricing  301
+/buy-r6-cheats/ /pricing  301
+/buy-r6-cheat   /pricing  301
+/buy-r6-cheat/  /pricing  301
+/buy-r6-hacks   /pricing  301
+/buy-r6-hacks/  /pricing  301
+/buy-r6-hack    /pricing  301
+/buy-r6-hack/   /pricing  301
+/buy-r6-aimbot  /pricing  301
+/buy-r6-aimbot/ /pricing  301
+/buy-r6-esp     /pricing  301
+/buy-r6-esp/    /pricing  301
+/buy-rainbow-six-siege-cheats  /pricing  301
+/buy-rainbow-six-siege-cheats/ /pricing  301
+
+# Policy aliases
+/refund/          /refunds  301
+/refund-policy    /refunds  301
+/refund-policy/   /refunds  301
+/privacy-policy   /privacy  301
+/privacy-policy/  /privacy  301
+/terms-of-use     /terms    301
+/terms-of-use/    /terms    301
+/terms-of-service /terms    301
+/terms-of-service/ /terms   301
+
+# Primary SEO keyword variants → product
+/r6-hacks     /r6-cheats  301
+/r6-hacks/    /r6-cheats  301
+/r6-hack      /r6-cheats  301
+/r6-hack/     /r6-cheats  301
+/r6-cheat     /r6-cheats  301
+/r6-cheat/    /r6-cheats  301
+/r6-aimbot    /r6-cheats  301
+/r6-aimbot/   /r6-cheats  301
+/r6-esp       /r6-cheats  301
+/r6-esp/      /r6-cheats  301
+/r6-wallhack  /r6-cheats  301
+/r6-wallhack/ /r6-cheats  301
+/r6-radar     /r6-cheats  301
+/r6-radar/    /r6-cheats  301
+/r6-spoofer   /r6-cheats  301
+/r6-spoofer/  /r6-cheats  301
+
+# Guides / setup aliases
+/guides           /forums                  301
+/guides/          /forums                  301
+/features-list    /forums/features-list    301
+/setup            /forums/complete-setup   301
+/r6-setup         /forums/complete-setup   301
+/r6-cheats-setup  /forums/complete-setup   301
+
+# Forum short-slug aliases
+/forums/setup         /forums/complete-setup     301
+/forums/features      /forums/features-list      301
+/forums/aimbot        /forums/aimbot-settings    301
+/forums/esp           /forums/esp-wallhack-guide 301
+/forums/wallhack      /forums/esp-wallhack-guide 301
+/forums/radar         /forums/radar-hack-guide   301
+/forums/antivirus     /forums/disable-antivirus  301
+/forums/defender      /forums/disable-antivirus  301
+/forums/windows       /forums/windows-setup      301
+/forums/stream-proof  /forums/stream-proof-setup 301
+/forums/battleye      /forums/battleye-status    301
+/forums/undetected    /forums/undetected-status  301
+/forums/loader        /forums/loader-errors      301
+/forums/survival      /forums/raid-play-guide    301
+/forums/loot-run      /forums/raid-play-guide    301
+
+# Legacy Tarkov slugs → R6 product (rebrand)
+/tarkov-cheats   /r6-cheats  301
+/tarkov-cheats/  /r6-cheats  301
+/eft-cheats      /r6-cheats  301
+/eft-cheats/     /r6-cheats  301
+/escape-from-tarkov-cheats   /r6-cheats  301
+/escape-from-tarkov-cheats/  /r6-cheats  301
+/tarkov-hacks   /r6-cheats  301
+/tarkov-hacks/  /r6-cheats  301
+/eft-hacks      /r6-cheats  301
+/eft-hacks/     /r6-cheats  301
+/escape-from-tarkov-hacks  /r6-cheats  301
+/escape-from-tarkov-hacks/ /r6-cheats  301
+/tarkov-aimbot  /r6-cheats  301
+/tarkov-esp     /r6-cheats  301
+/tarkov-wallhack /r6-cheats 301
+/tarkov-radar   /r6-cheats  301
+/eft-aimbot     /r6-cheats  301
+/eft-esp        /r6-cheats  301
+/eft-wallhack   /r6-cheats  301
+/buy-tarkov-cheats  /pricing  301
+/buy-tarkov-cheats/ /pricing  301
+/buy-eft-cheats     /pricing  301
+/buy-eft-cheats/    /pricing  301
+
+# Legacy Warzone slugs → R6 product (older rebrand)
+/warzone-cheats  /r6-cheats  301
+/warzone-cheats/ /r6-cheats  301
+/warzone-hacks   /r6-cheats  301
+/warzone-hacks/  /r6-cheats  301
+/warzone-aimbot  /r6-cheats  301
+/warzone-esp     /r6-cheats  301
+/warzone-wallhack /r6-cheats 301
+/isle-cheats     /r6-cheats  301
+/isle-cheats/    /r6-cheats  301
+/wardogs-hacks   /r6-cheats  301
+/wardogs-hacks/  /r6-cheats  301
+/buy-warzone-cheats  /pricing  301
+/buy-warzone-cheats/ /pricing  301
+
+# Legacy forum slugs
+/forums/ricochet-status    /forums/battleye-status  301
+/forums/ricochet-status/   /forums/battleye-status  301
+/forums/ranked-play-guide  /forums/raid-play-guide  301
+/forums/ranked-play-guide/ /forums/raid-play-guide  301
+/forums/loot-run-guide     /forums/raid-play-guide  301
+/forums/loot-run-guide/    /forums/raid-play-guide  301
+/forums/survival-guide     /forums/raid-play-guide  301
+/forums/survival-guide/    /forums/raid-play-guide  301
+
+# Legacy slugs → forums
+/articles       /forums  301
+/articles/      /forums  301
+/articles/*     /forums  301
+/blog/instructions       /forums/complete-setup#quick-checklist  301
+/blog/how-to-load        /forums/complete-setup#load-order       301
+/forums/instructions     /forums/complete-setup#quick-checklist  301
+/forums/instructions/    /forums/complete-setup#quick-checklist  301
+/forums/how-to-load      /forums/complete-setup#load-order       301
+/forums/how-to-load/     /forums/complete-setup#load-order       301
+/blog/:slug/    /forums/:slug  301
+/blog/:slug     /forums/:slug  301
+/forums/:slug/  /forums/:slug  301
+
+# Legacy / alternate sitemap URLs → single canonical sitemap
+/sitemap-pages.xml     /sitemap.xml  301
+/sitemap-products.xml  /sitemap.xml  301
+/sitemap-forums.xml    /sitemap.xml  301
+/sitemap-images.xml    /sitemap.xml  301
+/sitemap-blogs.xml     /sitemap.xml  301
+/sitemap-regions.xml   /sitemap.xml  301
+/sitemap-index.xml     /sitemap.xml  301
+/sitemap_index.xml     /sitemap.xml  301
+/sitemap.xml/          /sitemap.xml  301
